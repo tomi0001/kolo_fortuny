@@ -1,0 +1,413 @@
+body {
+    background-image: url('./tlo.png'); /* from http://subtlepatterns.com */
+
+}
+#login {
+    background-color: rgba(116, 171, 237, 0.7);;
+}
+span.login {
+    color: #0E3567;
+}
+span.error {
+    color: red;
+}
+#main {
+    background-color: rgba(61, 111, 177, 0.78);
+    -webkit-box-shadow: 0px 0px 26px 3px rgba(16, 25, 90, 1);
+-moz-box-shadow: 0px 0px 26px 3px rgba(16, 25, 90, 1);
+box-shadow: 0px 0px 26px 3px rgba(16, 25, 90, 1);
+}
+div.menu a:link ,
+ div.menu   a:visited {
+    color: yellow;
+}
+div.menu a:hover { 
+ color: #A5CE46; 
+ text-decoration: none; 
+} 
+
+div.changePassword {
+        background-color: rgba(61, 111, 177, 0.78);
+    -webkit-box-shadow: 0px 0px 26px 3px rgba(16, 25, 90, 1);
+-moz-box-shadow: 0px 0px 26px 3px rgba(16, 25, 90, 1);
+box-shadow: 0px 0px 26px 3px rgba(16, 25, 90, 1);
+color: white;
+}
+div.addTitle {                    
+             background-color: rgba(61, 111, 177, 0.78);
+    -webkit-box-shadow: 0px 0px 26px 3px rgba(16, 25, 90, 1);
+-moz-box-shadow: 0px 0px 26px 3px rgba(16, 25, 90, 1);
+box-shadow: 0px 0px 26px 3px rgba(16, 25, 90, 1);
+color: white;              
+}
+div.loadStatistic {
+         background-color: rgba(61, 111, 177, 0.78);
+    -webkit-box-shadow: 0px 0px 26px 3px rgba(16, 25, 90, 1);
+-moz-box-shadow: 0px 0px 26px 3px rgba(16, 25, 90, 1);
+box-shadow: 0px 0px 26px 3px rgba(16, 25, 90, 1);
+color: white;   
+}
+table.changePassword {
+    color: white;
+}
+table.addTitle {
+     color: white;
+}
+
+#page {
+    background-color: rgba(178, 134, 217, 0.75);
+    -webkit-box-shadow: 0px 0px 49px 2px rgba(16, 22, 95, 1);
+-moz-box-shadow: 0px 0px 49px 2px rgba(16, 22, 95, 1);
+box-shadow: 0px 0px 49px 2px rgba(16, 22, 95, 1);
+}
+
+#menu {
+    background-color: rgba(114, 73, 160, 0.87);
+-webkit-box-shadow: 0px 0px 22px 2px rgba(16, 22, 95, 1);
+-moz-box-shadow: 0px 0px 22px 2px rgba(16, 22, 95, 1);
+box-shadow: 0px 0px 22px 2px rgba(16, 22, 95, 1);
+}
+
+#page {
+   
+    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 600s; /* Chrome, Safari, Opera */
+    animation-name: example;
+    animation-duration: 600s;
+}
+span.color-1 {
+    color: #10C51F;
+}
+span.color-2 {
+    color: #E1D52A;
+}
+span.color-3 {
+    color: #E14141;
+}
+span.color-4 {
+    color: #161D86;
+}
+span.color-5 {
+     color: #E14141;
+}
+span.color-6 {
+    color: #161D86;
+}
+span.color-7 {
+    color: #E1D52A;
+}
+span.color-8 {
+    color: #161D86;
+}
+span.color-9 {
+    color: #10C51F;
+}
+span.color-10 {
+    color: #E14141;
+}
+span.color-11 {
+    color: #E1D52A;
+}
+button.button-newGame {
+-webkit-box-shadow: 0px 0px 15px 7px rgba(14, 21, 76, 1);
+-moz-box-shadow: 0px 0px 15px 7px rgba(14, 21, 76, 1);
+box-shadow: 0px 0px 15px 7px rgba(14, 21, 76, 1);
+background-color: #367ED7;
+border-color: blue;
+color: white;
+}
+div.button-selectCategory:hover { 
+    -webkit-box-shadow: 0px 0px 21px 0px rgba(188, 218, 143, 1);
+-moz-box-shadow: 0px 0px 21px 0px rgba(188, 218, 143, 1);
+box-shadow: 0px 0px 21px 0px rgba(188, 218, 143, 1);
+    background-color: #F3F1B4;
+    border-color: #32A748;
+    
+}
+div.button-selectCategory-1 {
+    -webkit-box-shadow: 0px 0px 15px 7px rgba(14, 21, 76, 1);
+-moz-box-shadow: 0px 0px 15px 7px rgba(14, 21, 76, 1);
+box-shadow: 0px 0px 15px 7px rgba(14, 21, 76, 1);
+background-color: #367ED7;
+border-color: blue;
+color: white;
+}
+div.button-selectCategory-2 {
+-webkit-box-shadow: 0px 0px 15px 9px rgba(190, 134, 226, 1);
+-moz-box-shadow: 0px 0px 15px 9px rgba(190, 134, 226, 1);
+box-shadow: 0px 0px 15px 9px rgba(190, 134, 226, 1);
+background-color: #A500EB;
+border-color: black;
+color: white;
+}
+div.button-selectCategory-3 {
+-webkit-box-shadow: 0px 0px 15px 9px rgba(190, 134, 226, 1);
+-moz-box-shadow: 0px 0px 15px 9px rgba(190, 134, 226, 1);
+box-shadow: 0px 0px 15px 9px rgba(190, 134, 226, 1);
+background-color: #1f35b6;
+border-color: black;
+color: white;
+}
+div.button-selectCategory-4 {
+-webkit-box-shadow: 0px 0px 15px 9px rgba(190, 134, 226, 1);
+-moz-box-shadow: 0px 0px 15px 9px rgba(190, 134, 226, 1);
+box-shadow: 0px 0px 15px 9px rgba(190, 134, 226, 1);
+background-color: #E6DD5C;
+border-color: black;
+color: white;
+}
+div.button-selectCategory-5 {
+-webkit-box-shadow: 0px 0px 15px 9px rgba(190, 134, 226, 1);
+-moz-box-shadow: 0px 0px 15px 9px rgba(190, 134, 226, 1);
+box-shadow: 0px 0px 15px 9px rgba(190, 134, 226, 1);
+background-color: #E63434;
+border-color: black;
+color: white;
+}
+div.button-selectCategory-6 {
+-webkit-box-shadow: 0px 0px 15px 9px rgba(190, 134, 226, 1);
+-moz-box-shadow: 0px 0px 15px 9px rgba(190, 134, 226, 1);
+box-shadow: 0px 0px 15px 9px rgba(190, 134, 226, 1);
+background-color: #E6B890;
+border-color: black;
+color: white;
+}
+div.button-selectCategory-7 {
+-webkit-box-shadow: 0px 0px 15px 9px rgba(190, 134, 226, 1);
+-moz-box-shadow: 0px 0px 15px 9px rgba(190, 134, 226, 1);
+box-shadow: 0px 0px 15px 9px rgba(190, 134, 226, 1);
+background-color: #E64FB1;
+border-color: black;
+color: white;
+}
+div.button-selectCategory-8 {
+-webkit-box-shadow: 0px 0px 15px 9px rgba(190, 134, 226, 1);
+-moz-box-shadow: 0px 0px 15px 9px rgba(190, 134, 226, 1);
+box-shadow: 0px 0px 15px 9px rgba(190, 134, 226, 1);
+background-color: #69E625;
+border-color: black;
+color: white;
+}
+div.button-selectCategory-9 {
+-webkit-box-shadow: 0px 0px 15px 9px rgba(190, 134, 226, 1);
+-moz-box-shadow: 0px 0px 15px 9px rgba(190, 134, 226, 1);
+box-shadow: 0px 0px 15px 9px rgba(190, 134, 226, 1);
+background-color: #3FE6C5;
+border-color: black;
+color: white;
+}
+div.button-selectCategory-10 {
+-webkit-box-shadow: 0px 0px 15px 9px rgba(190, 134, 226, 1);
+-moz-box-shadow: 0px 0px 15px 9px rgba(190, 134, 226, 1);
+box-shadow: 0px 0px 15px 9px rgba(190, 134, 226, 1);
+background-color: #E69864;
+border-color: black;
+color: white;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+    0% {background-color: rgba(178, 134, 217, 0.75);}
+    5% {background-color: rgba(131, 82, 255, 0.35);}
+    10% {background-color: rgba(178, 134, 217, 0.15);}
+    15% {background-color: rgba(131, 82, 255, 0.75);}
+    20% {background-color: rgba(178, 134, 217, 0.35);}
+    25% {background-color: rgba(131, 82, 255, 0.15);}
+    30% {background-color: rgba(178, 134, 217, 0.75);}
+    35% {background-color: rgba(131, 82, 255, 0.35);}
+    40% {background-color: rgba(178, 134, 217, 0.15);}
+    45% {background-color: rgba(131, 82, 255, 0.35);}
+    50% {background-color: rgba(178, 134, 217, 0.15);}
+    55% {background-color: rgba(131, 82, 255, 0.75);}
+    60% {background-color: rgba(178, 134, 217, 0.35);}
+    65% {background-color: rgba(131, 82, 255, 0.15);}
+    70% {background-color: rgba(178, 134, 217, 0.35);}
+    75% {background-color: rgba(131, 82, 255, 0.15);}
+    80% {background-color: rgba(178, 134, 217, 0.35);}
+    85% {background-color: rgba(131, 82, 255, 0.15);}
+    90% {background-color: rgba(178, 134, 217, 0.35);}
+    95% {background-color: rgba(131, 82, 255, 0.15);}
+    100% {background-color: rgba(178, 134, 217, 0.75);}
+    
+}
+
+span.message {
+    color: #4B2D75; 
+}
+
+.scroll-y::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+.scroll-y::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+div.char {
+    background-color: #1D63D3;
+box-shadow: 0px 0px 7px 4px #124391, 0px 0px 9px 3px #16305a inset;
+    
+}
+
+div.category {
+    color: #652481;
+    font-weight: bold;
+}
+
+div.down {
+
+    background-color: rgba(108, 65, 129, 0.65);
+}
+span.punkt {
+    font-weight: bold;
+    color: #613167;
+}
+
+button.button-one {
+   
+	box-shadow: 0px 0px 11px 3px #001bcc;
+	background-color:#594bab;
+	border-radius:18px;
+	border:2px solid #1e1057;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Impact;
+	font-size:21px;
+	font-weight:bold;
+	padding:13px 10px;
+	text-decoration:none;
+	text-shadow:0px 0px 19px #dbdbdb;
+}
+button.button-disable {
+   
+	box-shadow: 0px 0px 11px 3px #38494E;
+	background-color:#64838C;
+	border-radius:18px;
+	border:2px solid #38494E;
+	display:inline-block;
+	cursor: not-allowed;
+	color:#ffffff;
+	font-family:Impact;
+	font-size:21px;
+	font-weight:bold;
+	padding:13px 10px;
+	text-decoration:none;
+	text-shadow:0px 0px 19px #dbdbdb;
+}
+button.button-one:hover {
+	background-color:#0c1061;
+}
+button.button-one:active {
+	position:relative;
+	top:1px;
+}
+
+button.button-two {
+	box-shadow: 0px 0px 11px 3px #707070;
+	background-color:#65c43f;
+	border-radius:18px;
+	border:2px solid #c2aa32;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Impact;
+	font-size:21px;
+	font-weight:bold;
+	padding:13px 10px;
+	text-decoration:none;
+	text-shadow:0px 0px 19px #dbdbdb;
+}
+button.button-two:hover {
+	background-color:#3b9449;
+}
+button.button-two:active {
+	position:relative;
+	top:1px;
+}
+button.button-three {
+	box-shadow: 0px 0px 11px 3px #dba15a;
+	background-color:#c2523e;
+	border-radius:18px;
+	border:2px solid #eb1717;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Impact;
+	font-size:21px;
+	font-weight:bold;
+	padding:13px 10px;
+	text-decoration:none;
+	text-shadow:0px 0px 19px #dbdbdb;
+}
+button.button-three:hover {
+	background-color:#db6f34;
+}
+button.button-three:active {
+	position:relative;
+	top:1px;
+}
+
+        
+#char-one {
+   background-color: rgba(57, 39, 103, 0.95);
+   border-radius: 20px;
+   -webkit-box-shadow: 0px 0px 9px 6px rgba(49, 106, 146, 1);
+-moz-box-shadow: 0px 0px 9px 6px rgba(49, 106, 146, 1);
+box-shadow: 0px 0px 9px 6px rgba(49, 106, 146, 1);
+    
+}
+
+#char-two {
+    
+   background-color: rgba(27, 140, 97, 0.95);
+   border-radius: 20px;
+-webkit-box-shadow: 0px 0px 9px 6px rgba(32, 158, 79, 1);
+-moz-box-shadow: 0px 0px 9px 6px rgba(32, 158, 79, 1);
+box-shadow: 0px 0px 9px 6px rgba(32, 158, 79, 1);
+    
+}
+
+div.char-blue {
+        background-color: #1D63D3;
+        border-radius: 14px;
+        border: 4px solid #061d8e;
+        color: #7F94CB;
+ 
+}
+div.char-blue:hover {
+        background-color: #BCE2FF;
+        border-radius: 14px;
+        border: 4px solid #061d8e;
+        cursor: pointer;
+        color: #2B3467;
+ 
+}
+
+div.char-green {
+        background-color: rgba(31, 140, 24, 1);;
+        border-radius: 14px;
+        border: 4px solid #117830;
+        color: #9AB830;
+ 
+}
+div.char-green:hover {
+        background-color: #BBE2AA;
+        border-radius: 14px;
+        border: 4px solid #57ff89;
+        cursor: pointer;
+        color: #0DE231;
+ 
+}
+div.char-color-off {
+        background-color: silver;
+        border-radius: 14px;
+        border: 4px solid #707979;
+        
+        color: #334139;
+}
+div.char {
+    color: white;  
+    
+}

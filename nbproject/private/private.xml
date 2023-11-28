@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/var/www/html/kolo_fortuny/resources/views/include/include.blade.php</file>
+            <file>file:/var/www/html/kolo_fortuny/resources/views/main/main.blade.php</file>
+            <file>file:/var/www/html/kolo_fortuny/resources/views/layouts/app.blade.php</file>
+            <file>file:/var/www/html/kolo_fortuny/resources/views/ajax/loadPage2.blade.php</file>
+            <file>file:/var/www/html/kolo_fortuny/app/Http/Controllers/MainController.php</file>
+            <file>file:/var/www/html/kolo_fortuny/routes/web.php</file>
+            <file>file:/var/www/html/kolo_fortuny/app/Models/Statistic.php</file>
+            <file>file:/var/www/html/kolo_fortuny/app/Http/Services/Statistic.php</file>
+            <file>file:/var/www/html/kolo_fortuny/public/css/app_color.css</file>
+            <file>file:/var/www/html/kolo_fortuny/public/js/app.js</file>
+            <file>file:/var/www/html/kolo_fortuny/resources/views/include/url.blade.php</file>
+            <file>file:/var/www/html/kolo_fortuny/public/css/app.css</file>
+            <file>file:/var/www/html/kolo_fortuny/app/Http/Services/Word.php</file>
+            <file>file:/var/www/html/kolo_fortuny/public/css/app_1810.css</file>
+            <file>file:/var/www/html/kolo_fortuny/public/css/app_1210.css</file>
+            <file>file:/var/www/html/kolo_fortuny/app/Models/Word.php</file>
+            <file>file:/var/www/html/kolo_fortuny/app/Http/Services/Root.php</file>
+            <file>file:/var/www/html/kolo_fortuny/public/css/app_1410.css</file>
+            <file>file:/var/www/html/kolo_fortuny/public/css/app_360.css</file>
+            <file>file:/var/www/html/kolo_fortuny/public/css/app_700.css</file>
+            <file>file:/var/www/html/kolo_fortuny/resources/views/main/index.blade.php</file>
+            <file>file:/var/www/html/kolo_fortuny/resources/views/main/menu.blade.php</file>
+            <file>file:/var/www/html/kolo_fortuny/resources/views/root/loadStatistic.blade.php</file>
+        </group>
+    </open-files>
+</project-private>

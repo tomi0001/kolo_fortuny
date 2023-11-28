@@ -1,0 +1,109 @@
+div.char {
+    
+    width: 45px;
+    height: 50px;
+    margin-right: 10px;
+    margin-top: 30px;
+    float: left;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: bold;
+   
+    
+    
+}
+#word {
+    
+    padding: 20px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 70%;
+    
+}
+div.empty {
+    float: left;
+    width: 45px;
+    padding: 5px;
+    height: 50px;
+    margin-right: 10px;
+    margin-top: 30px;
+}
+
+div.category {
+    width: 85%;
+    
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 35px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+div.down {
+
+    width: 100%;
+    height: 120px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+span.punkt  {
+    font-size: 23px;
+    
+}
+div.punkt {
+    padding-top: 17px;
+    float: left;
+    width: 25%;
+
+}
+
+
+div.punkt-at {
+    clear: both;
+    width: 25%;
+}
+div.button-div {
+    width: 70%;
+
+    float: left;
+    padding-top: 30px;
+    
+
+}
+
+
+button.button-bye {
+    margin-left: 20px;
+}
+        
+
+#char-one {
+    
+    display: none;
+    margin: 6px;
+    padding: 10px;
+    
+}
+
+#char-two {
+    
+    display: none;
+    margin: 6px;
+    padding: 10px;
+    
+}
+
+div.char-type {
+   float: left;
+   width: 50px;
+   height: 50px;
+   font-size: 32px;
+   margin: 2px;
+   text-align: center;
+   
+}
