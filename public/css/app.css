@@ -13,6 +13,30 @@ div.char {
     
     
 }
+div.char-select {
+    width: 45px;
+    height: 50px;
+    margin-right: 10px;
+    margin-top: 30px;
+    padding-top: -50px;
+    float: left;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 33px;
+    font-weight: bold;
+}
+div.char-select2 {
+    width: 45px;
+    height: 50px;
+    margin-right: 10px;
+    margin-top: 30px;
+    padding-top: -50px;
+    float: left;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 33px;
+    font-weight: bold;
+}
 #word {
     
     padding: 20px;
@@ -79,8 +103,12 @@ div.button-div {
 
 button.button-bye {
     margin-left: 20px;
+    
 }
-        
+button.button-word {
+    margin-left: 20px;
+    height: 60px;
+}
 
 #char-one {
     
@@ -97,7 +125,12 @@ button.button-bye {
     padding: 10px;
     
 }
-
+#char-three {
+    display: none;
+    margin: 6px;
+    padding: 10px;
+    text-align: center;
+}
 div.char-type {
    float: left;
    width: 50px;
@@ -106,4 +139,15 @@ div.char-type {
    margin: 2px;
    text-align: center;
    
+}
+#winner {
+    display: none;
+    margin: 6px;
+    padding: 10px;
+}
+div.winner {
+    
+    font-weight: bold;
+    text-align: center;
+    
 }

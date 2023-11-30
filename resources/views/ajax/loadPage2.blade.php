@@ -2,12 +2,12 @@
     
     
     function loadPageNext(punkts) {
-
+        licznikGier++;
         $.ajax({
             url : urlArray[1],
                 method : "get",
                  data : 
-              "&punkts=" + punkts 
+              "&punkts=" + punkts + "&licznik=" + licznikGier
             ,
                  
                 dataType : "html",
@@ -31,13 +31,13 @@
         var string2 = "";
         for (i=0;i < string.length;i++) {
             if (words2[i] == true) {
-                string2 += "<div class='char'>" + string[i] + "</div>";
+                string2 += "<div class='char-select'>" + string[i] + "</div>";
             }
             else if (string[i] == " ") {
                  string2 += "<div class='empty'>&nbsp;</div>";
             }
             else if (string[i] == char)  {
-                string2 += "<div class='char'>" + char + "</div>";
+                string2 += "<div class='char-select2'>" + char + "</div>";
                 
                 words2[i] = true;
             }
@@ -58,7 +58,15 @@
             //$(".button-one");
         }
         $("#punkt").text(punkts);
-        $("#word").html(string2);
+        $("#word").html(string2).fadeIn(4000);
+    }
+    function checkWord(word) {
+        for (i=0;i < word.length;i++) {
+            if (word[i].toUpperCase() != words[i]) {
+                return false;
+            }
+        }
+        return true;
     }
     function isEnd() {
         for (i=0;i < words.length;i++) {
@@ -67,6 +75,44 @@
             }
         }
         return true;
+    }
+    function selectWord() {
+        var string  = words;
+        var string2 = "";
+        for (i=0;i < words2.length;i++) {
+            if (words2[i] == true) {
+                string2 += "<div class='char-select'>" + string[i] + "</div>";
+            }
+            else if (string[i] == " ") {
+                 string2 += "<div class='empty'>&nbsp;</div>";
+            }
+            else   {
+                string2 += "<div class='char-select2'>" + words[i] + "</div>";
+                
+                words2[i] = true;
+            } 
+        }
+        //punkt = parseInt(punkt);
+        //punkts = punkts -  punkt;
+    
+        //$("#punkt").text(punkts);
+        $("#word").html(string2).fadeIn(4000);
+    }
+    function winner() {
+        var winner = 0;
+        $("#winner").fadeIn(1000);
+        $("#winner").addClass("winner");
+        for (i=punktsWinnerArray.length;i >= 0;i--) {
+            if (parseInt(punkts) + parseInt(punktsAt) >= punktsWinnerArray[i]) {
+                punktsWinner =  punktsWinnerArray[i];
+                //alert(punktsWinner);
+                break;
+            }
+        }
+        //alert(punktsAt);
+        punktSum = parseInt(punkts) + parseInt(punktsAt);
+        $("#winner").html("Wygrałeś " + punktSum + " ptk gwarantowane " + punktsWinner + " ptk");
+        
     }
     showHideWord('{{$wordl->name}}');
     //if ('{{$bool}}' == "false") {
@@ -95,6 +141,17 @@
             }
 
         });
+        $(document).on("click", function(e){
+            if($(e.target).is(".button-three")){
+        $('#char-three').fadeIn(1000);
+
+            }else if ($(e.target).is("#wordText")) {
+            }
+            else {
+                $('#char-three').fadeOut(500);
+            }
+
+        });
 
         $(".char-on").click(function() {
            if ($(this).hasClass("char-blue")) {
@@ -110,8 +167,22 @@
            $(this).removeClass("char-blue");
            $(this).removeClass("char-green");
            if (isEnd()) {
-               setTimeout(loadPageNext,3000)
+               winner();
+               setTimeout(loadPageNext,3000);
            }
+        });
+        
+        $("#buttonFinish").click(function() {
+            var bool = checkWord($("#wordText").val());
+            if (bool == true) {
+                selectWord();
+                winner();
+                setTimeout(loadPageNext,3000);
+            }
+            else {
+                 selectWord();
+                 gameEnd();
+            }
         });
 } );
 </script>
@@ -176,4 +247,13 @@
     <div class="char-on char-type char-green">Ó</div>
 
 
+</div>
+
+<div id="char-three">
+    <textarea id="wordText" class="form-control" placeholder="Wpisz hasło"></textarea><br>
+    <button class="button-word button-word-three" id="buttonFinish">ZGADUJE</button>
+</div>
+
+<div id="winner">
+    
 </div>

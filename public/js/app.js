@@ -3,11 +3,20 @@ var punkts = "";
 var words = [];
 var words2 = [];
 var punktsAt = "";
+var licznikGier = 1;
+var punktsWinner = 0;
+var punktsWinnerArray = [
+  10000,
+  25000,
+  60000,
+  100000,
+  250000
+];
 function setPunkt(punkt,punktsAt2,bool) {
     //alert(punktsAt2);
     if (bool == "false") {
         punkts = punkt;
-        punktsAt = punktsAt2;
+        punktsAt = parseInt(punktsAt2);
         $("#punkt").text(punkts);
     }
     else {

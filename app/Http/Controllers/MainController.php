@@ -20,7 +20,7 @@ class MainController extends BaseController
     }
     public function loadPage2(Request $request) {
         $Statistic = new Statistic;
-        $Statistic->saveStatistic($request,"ładowanie hasła");
+        $Statistic->saveStatistic($request,"Hasło nr 1");
         $Word = new Word;
         $wordl = $Word->selectWordl($request->get("id"));
         //print $request->get("id");
@@ -28,7 +28,7 @@ class MainController extends BaseController
     }
     public function loadPageNext(Request $request) {
         $Statistic = new Statistic;
-        $Statistic->saveStatistic($request,"Kolejne hasło");
+        $Statistic->saveStatistic($request,"Hasło nr " . $request->get("licznik"));
         $Word = new Word;
         $category = $Word->selectCategory();
         return View("ajax.indexNextGame")->with("category",$category)->with("punktsAt",$request->get("punkts"));

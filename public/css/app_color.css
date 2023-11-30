@@ -229,7 +229,16 @@ color: white;
     100% {background-color: rgba(178, 134, 217, 0.75);}
     
 }
-
+@keyframes mymove {
+from {  background-color: #1D63D3;
+        box-shadow: 0px 0px 7px 4px #124391, 0px 0px 9px 3px #16305a inset;
+    }
+  to {background-color: red;
+      box-shadow: 0px 0px 5px 3px #8f2400 inset, 0px 0px 7px 1px #ff0000;
+      border: 2px solid #620000;
+      color: white;
+        }
+}
 span.message {
     color: #4B2D75; 
 }
@@ -250,6 +259,22 @@ box-shadow: 0px 0px 7px 4px #124391, 0px 0px 9px 3px #16305a inset;
     
 }
 
+div.char-select {
+       
+box-shadow: 0px 0px 5px 3px #8f2400 inset, 0px 0px 7px 1px #ff0000;
+border: 2px solid #620000;
+background-color: red;
+color: white;
+
+}
+div.char-select2 {
+       
+box-shadow: 0px 0px 5px 3px #8f2400 inset, 0px 0px 7px 1px #ff0000;
+border: 2px solid #620000;
+background-color: red;
+color: white;
+animation: mymove 3s;
+}
 div.category {
     color: #652481;
     font-weight: bold;
@@ -348,6 +373,30 @@ button.button-three:active {
 	position:relative;
 	top:1px;
 }
+button.button-word-three {
+	box-shadow: 0px 0px 7px 4px #d96a20;
+	background-color:#cc1f00;
+	border-radius:21px;
+	border:2px solid #db7241;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:21px;
+        font-weight: bold;
+	
+	text-decoration:none;
+	text-shadow:0px 0px 0px #ad1c09;
+}
+button.button-word-three:hover {
+	background-color:#990b0b;
+}
+button.button-word-three:active {
+	position:relative;
+	top:1px;
+}
+
+        
 
         
 #char-one {
@@ -367,6 +416,14 @@ box-shadow: 0px 0px 9px 6px rgba(49, 106, 146, 1);
 -moz-box-shadow: 0px 0px 9px 6px rgba(32, 158, 79, 1);
 box-shadow: 0px 0px 9px 6px rgba(32, 158, 79, 1);
     
+}
+
+#char-three {
+    background-color: rgba(186, 87, 87, 0.95);
+   border-radius: 20px;
+-webkit-box-shadow: 0px 0px 9px 6px #8C1F1F;
+-moz-box-shadow: 0px 0px 9px 6px #8C1F1F;
+box-shadow: 0px 0px 9px 6px #8C1F1F;
 }
 
 div.char-blue {
@@ -409,5 +466,13 @@ div.char-color-off {
 }
 div.char {
     color: white;  
+    
+}
+
+div.winner {
+    border-radius: 30px;
+    background-color: #73A74B;
+    color: #2A7326;
+    box-shadow: 0px 0px 25px 16px #308A4E;
     
 }
