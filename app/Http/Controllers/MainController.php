@@ -24,13 +24,13 @@ class MainController extends BaseController
         $Word = new Word;
         $wordl = $Word->selectWordl($request->get("id"));
         //print $request->get("id");
-        return View("ajax.loadPage2")->with("wordl",$wordl)->with("bool",$request->get("bool"))->with("punktsAt",0);
+        return View("ajax.loadPage2")->with("wordl",$wordl)->with("bool",$request->get("bool"))->with("punktsAt",0)->with("allCategories",$request->get("allCategories"));
     }
     public function loadPageNext(Request $request) {
         $Statistic = new Statistic;
         $Statistic->saveStatistic($request,"Hasło nr " . $request->get("licznik"));
         $Word = new Word;
         $category = $Word->selectCategory();
-        return View("ajax.indexNextGame")->with("category",$category)->with("punktsAt",$request->get("punkts"));
+        return View("ajax.indexNextGame")->with("category",$category)->with("punktsAt",$request->get("punkts"))->with("bool",$request->get("bool"));
     }
 }

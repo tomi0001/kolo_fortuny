@@ -476,3 +476,38 @@ div.winner {
     box-shadow: 0px 0px 25px 16px #308A4E;
     
 }
+div.gameOver {
+    border-radius: 30px;
+    background-color: #B2576C;
+    color: #FFD4F7;
+    box-shadow: 0px 0px 25px 16px #B27D95;
+}
+
+button.categories-all {
+    background-color: #438FBF;
+    color: white;
+}
+
+.categories-all {
+	box-shadow: 0px 0px 7px 6px #1a5799;
+	background-color:#4363a3;
+	border-radius:42px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:28px;
+	font-weight:bold;
+	padding:23px 55px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #2f6627;
+}
+.categories-all:hover {
+	background-color:#3f59bf;
+}
+.categories-all:active {
+	position:relative;
+	top:1px;
+}
+
+        

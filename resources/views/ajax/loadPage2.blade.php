@@ -8,6 +8,7 @@
                 method : "get",
                  data : 
               "&punkts=" + punkts + "&licznik=" + licznikGier
+              + "&bool=true" 
             ,
                  
                 dataType : "html",
@@ -111,7 +112,15 @@
         }
         //alert(punktsAt);
         punktSum = parseInt(punkts) + parseInt(punktsAt);
+        punkts = punktSum;
         $("#winner").html("Wygrałeś " + punktSum + " ptk gwarantowane " + punktsWinner + " ptk");
+        $("#punkt").text(punkts);
+        
+    }
+    function gameEnd() {
+        $("#winner").fadeIn(1000);
+        $("#winner").addClass("gameOver");
+        $("#winner").html("Koniec gry wygrałeś <br>" + punktsWinner + " ptk");
         
     }
     showHideWord('{{$wordl->name}}');
@@ -186,8 +195,11 @@
         });
 } );
 </script>
-
-<div class="category">{{$wordl->category}}</div>
+@if ($allCategories == 1)
+    <div class="category">WSZYSTKIE KATEGORIE</div>
+@else
+    <div class="category">{{$wordl->category}}</div>
+@endif
 <div id="word"></div>
 
 

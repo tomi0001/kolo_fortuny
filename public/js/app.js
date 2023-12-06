@@ -13,7 +13,7 @@ var punktsWinnerArray = [
   250000
 ];
 function setPunkt(punkt,punktsAt2,bool) {
-    //alert(punktsAt2);
+    //alert(bool);
     if (bool == "false") {
         punkts = punkt;
         punktsAt = parseInt(punktsAt2);
@@ -21,15 +21,16 @@ function setPunkt(punkt,punktsAt2,bool) {
     }
     else {
         punkts = parseInt(punkts);
-        punktsAt2 = parseInt(punktsAt2);
-        punktsAt = punkts + punktsAt2;
-        punkts = punktsAt;
-        $("#punkt").text(punktsAt);
+        punktsAt = parseInt(punktsAt2);
+        //punktsAt = punkts + punktsAt2;
+        //punkts = punktsAt;
+        $("#punkt").text(punkts);
     }
 }
 function loadNewGame(page,id) {
+
     switch (page) {
-        case 'page1': loadPage1();
+        case 'page1': loadPage2(0);
             break;
         case 'page2': loadPage2(id);
             break;
@@ -37,8 +38,9 @@ function loadNewGame(page,id) {
     }
 }
 function loadNextGame(page,id) {
+
     switch (page) {
-        case 'page1': loadPage1(true);
+        case 'page1': loadPage2(0,true);
             break;
         case 'page2': loadPage2(id,true);
             break;
@@ -47,16 +49,23 @@ function loadNextGame(page,id) {
 }
 
 function loadPage1(bool = false) {
+    //alert('sdfsdf');
+    $("#newGame").css("display","none");
     $("#page").html($("#page1").html()).animate();
 }
 
-function loadPage2(id,bool = false) {
-
+function loadPage2(id,bool = 'false') {
+    if (id == 0) {
+        var allCategories = 1;
+    }
+    else {
+        var allCategories = 0;
+    }
     $.ajax({
         url : urlArray[0],
             method : "get",
             data : 
-              "&id=" + id +  "&bool="  + bool
+              "&id=" + id +  "&bool="  + bool + "&allCategories=" + allCategories
             ,
             dataType : "html",
             

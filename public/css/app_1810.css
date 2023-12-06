@@ -19,14 +19,19 @@
     margin-top: 15px;
 }
 div.button {
-    padding-top: 80px;
+    padding-top: 10px;
     margin-left: auto;
     margin-right: auto;
     width: 1200px;
 
     text-align: center;
+   
     
     
+    
+}
+#newGame {
+    padding-top: 300px;
 }
 div.page3 {
     width: 1200px;
@@ -139,10 +144,10 @@ div.title {
 }
 
 button.button-newGame {
-    width: 400px;
-    height: 80px;
+    width: 800px;
+    height: 200px;
     border-radius: 25px;
-    font-size: 25px;
+    font-size: 45px;
     font-weight: bold;
 }
 div.button-selectCategory {
@@ -240,6 +245,23 @@ div.winner {
     
     font-size: 60px;
     
+}
+div.gameOver {
+    width: 870px;
+    height: 200px;
+    position: fixed;
+    bottom: 30%;
+    right: 27%;
+    text-align: center;
+    font-size: 60px;
+}
+.categories-all {
+    width: 700px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size:35px;
 }
 
 }
