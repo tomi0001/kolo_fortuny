@@ -29,13 +29,13 @@
     
     function searchWord(char,punkt) {
         var string  = words;
-        var string2 = "";
+        var string2 = "<div class='word2'>";
         for (i=0;i < string.length;i++) {
             if (words2[i] == true) {
                 string2 += "<div class='char-select'>" + string[i] + "</div>";
             }
             else if (string[i] == " ") {
-                 string2 += "<div class='empty'>&nbsp;</div>";
+                 string2 += "</div><div class='empty'>&nbsp;</div><div class='word2'>";
             }
             else if (string[i] == char)  {
                 string2 += "<div class='char-select2'>" + char + "</div>";
@@ -46,6 +46,7 @@
                 string2 += "<div class='char'>&nbsp;</div>";
             }
         }
+        string2 += "</div>";
         punkt = parseInt(punkt);
         punkts = punkts -  punkt;
         if (punkts < 150) {
@@ -58,10 +59,18 @@
             $(".button-one").removeClass("button-one").addClass("button-disable");
             //$(".button-one");
         }
+        if (punkts < 50) {
+            $(".button-four").attr("disabled",true);
+            $(".button-four").removeClass("button-four").addClass("button-disable");
+            //$(".button-one");
+        }
         $("#punkt").text(punkts);
         $("#word").html(string2).fadeIn(4000);
     }
     function checkWord(word) {
+        if (word.length != words.length) {
+            return false;
+        }
         for (i=0;i < word.length;i++) {
             if (word[i].toUpperCase() != words[i]) {
                 return false;
@@ -79,13 +88,13 @@
     }
     function selectWord() {
         var string  = words;
-        var string2 = "";
+        var string2 = "<div class='word2'>";
         for (i=0;i < words2.length;i++) {
             if (words2[i] == true) {
                 string2 += "<div class='char-select'>" + string[i] + "</div>";
             }
             else if (string[i] == " ") {
-                 string2 += "<div class='empty'>&nbsp;</div>";
+                 string2 += "</div><div class='empty'>&nbsp;</div><div class='word2'>";
             }
             else   {
                 string2 += "<div class='char-select2'>" + words[i] + "</div>";
@@ -95,7 +104,7 @@
         }
         //punkt = parseInt(punkt);
         //punkts = punkts -  punkt;
-    
+        string2 += "</div>";
         //$("#punkt").text(punkts);
         $("#word").html(string2).fadeIn(4000);
     }
@@ -161,12 +170,24 @@
             }
 
         });
+        $(document).on("click", function(e){
+            if($(e.target).is(".button-four")){
+        $('#char-four').fadeIn(1000);
+
+            }else{
+                $('#char-four').fadeOut(1000);
+            }
+
+        });
 
         $(".char-on").click(function() {
            if ($(this).hasClass("char-blue")) {
                searchWord($(this).text(),80);
            }
-           else {
+           else if($(this).hasClass("char-yellow")) {
+               searchWord($(this).text(),50);
+           }
+           else if ($(this).hasClass("char-green")){
                searchWord($(this).text(),150);
            }
            
@@ -175,6 +196,7 @@
            $(this).removeClass("char-on");
            $(this).removeClass("char-blue");
            $(this).removeClass("char-green");
+           $(this).removeClass("char-yellow");
            if (isEnd()) {
                winner();
                setTimeout(loadPageNext,3000);
@@ -211,13 +233,27 @@
         <span class="punkt">  DO ZDOBYCIA: {{$wordl->punkt}} ptk</span> 
     </div>
     <div class="button-div">
+        <button class="button-bye button-four">KUPUJE CYFRĘ -50 ptk</button>
         <button class="button-bye button-one">KUPUJE SPÓŁGŁOSKĘ -80 ptk</button>
         <button class="button-bye button-two">KUPUJE SAMOGŁOSKĘ -150 ptk</button>
         <button class="button-bye button-three">ZGADUJE HASŁO</button>
     </div>
     
 </div>
+<div id="char-four">
+    <div class="char-on char-type char-yellow">0</div>
+    <div class="char-on char-type char-yellow">1</div>
+    <div class="char-on char-type char-yellow">2</div>
+    <div class="char-on char-type char-yellow">3</div>
+    <div class="char-on char-type char-yellow">4</div>
+    <div class="char-on char-type char-yellow">5</div>
+    <div class="char-on char-type char-yellow">6</div>
+    <div class="char-on char-type char-yellow">7</div>
+    <div class="char-on char-type char-yellow">8</div>
+    <div class="char-on char-type char-yellow">9</div>
 
+
+</div>
 <div id="char-one">
     <div class="char-on char-type char-blue">W</div>
     <div class="char-on char-type char-blue">R</div>

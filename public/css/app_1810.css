@@ -217,6 +217,15 @@ div.space {
     
     
 }
+#char-four {
+    width: 600px;
+    height: 79px;
+    position: fixed;
+    bottom: 150px;
+    right: 500px;
+    
+    
+}
 #char-two {
     width: 600px;
     height: 79px;

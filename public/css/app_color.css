@@ -299,7 +299,7 @@ button.button-one {
 	cursor:pointer;
 	color:#ffffff;
 	font-family:Impact;
-	font-size:21px;
+	font-size:17px;
 	font-weight:bold;
 	padding:13px 10px;
 	text-decoration:none;
@@ -315,7 +315,7 @@ button.button-disable {
 	cursor: not-allowed;
 	color:#ffffff;
 	font-family:Impact;
-	font-size:21px;
+	font-size:17px;
 	font-weight:bold;
 	padding:13px 10px;
 	text-decoration:none;
@@ -338,7 +338,7 @@ button.button-two {
 	cursor:pointer;
 	color:#ffffff;
 	font-family:Impact;
-	font-size:21px;
+	font-size:17px;
 	font-weight:bold;
 	padding:13px 10px;
 	text-decoration:none;
@@ -351,6 +351,28 @@ button.button-two:active {
 	position:relative;
 	top:1px;
 }
+button.button-four {
+	box-shadow: 0px 0px 11px 3px #707070;
+	background-color:#EEE82C;
+	border-radius:18px;
+	border:2px solid #c2aa32;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Impact;
+	font-size:17px;
+	font-weight:bold;
+	padding:13px 10px;
+	text-decoration:none;
+	text-shadow:0px 0px 19px #dbdbdb;
+}
+button.button-four:hover {
+	background-color:#DBBB1C;
+}
+button.button-four:active {
+	position:relative;
+	top:1px;
+}
 button.button-three {
 	box-shadow: 0px 0px 11px 3px #dba15a;
 	background-color:#c2523e;
@@ -360,7 +382,7 @@ button.button-three {
 	cursor:pointer;
 	color:#ffffff;
 	font-family:Impact;
-	font-size:21px;
+	font-size:17px;
 	font-weight:bold;
 	padding:13px 10px;
 	text-decoration:none;
@@ -408,6 +430,15 @@ box-shadow: 0px 0px 9px 6px rgba(49, 106, 146, 1);
     
 }
 
+#char-four {
+   background-color: rgba(219, 187, 28, 0.95);
+   border-radius: 20px;
+   -webkit-box-shadow: 0px 0px 9px 6px rgba(146, 123, 19, 1);
+-moz-box-shadow: 0px 0px 9px 6px rgba(146, 123, 19, 1);
+box-shadow: 0px 0px 9px 6px rgba(146, 123, 19, 1);
+    
+}
+
 #char-two {
     
    background-color: rgba(27, 140, 97, 0.95);
@@ -442,6 +473,22 @@ div.char-blue:hover {
  
 }
 
+div.char-yellow {
+        background-color: #FFE72F;
+        border-radius: 14px;
+        border: 4px solid #BE8B0A;
+        color: #AD210E;
+ 
+}
+div.char-yellow:hover {
+        background-color: #F2EFA6;
+        border-radius: 14px;
+        border: 4px solid #BE8B0A;
+        cursor: pointer;
+        color: #AD210E;
+ 
+}
+
 div.char-green {
         background-color: rgba(31, 140, 24, 1);;
         border-radius: 14px;
@@ -461,6 +508,7 @@ div.char-color-off {
         background-color: silver;
         border-radius: 14px;
         border: 4px solid #707979;
+        cursor: not-allowed;
         
         color: #334139;
 }

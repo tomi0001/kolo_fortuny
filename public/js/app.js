@@ -87,18 +87,20 @@ function showHideWord(word) {
     let string = "";
     words2 = [];
     words = [];
+    string = "<div class='word2'>";
     for(i=0;i < word.length;i++) {
         words[i] = word[i].toUpperCase();
         if (word[i] == " ") {
             //words2[i] = true;
-            string += "<div class='empty'>&nbsp;</div>";
+            string += "</div><div class='empty'>&nbsp;</div><div class='word2'>";
         }
         else {
             words2[i] = false;
             string += "<div class='char'>&nbsp;</div>";
         }
         
-    } 
+    }
+    string += "</div>";
     
     $("#word").html(string);
 }

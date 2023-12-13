@@ -44,6 +44,7 @@ div.char-select2 {
     margin-left: auto;
     margin-right: auto;
     height: 70%;
+    Word-wrap:no-wrap;
     
 }
 div.empty {
@@ -82,7 +83,7 @@ span.punkt  {
 div.punkt {
     padding-top: 17px;
     float: left;
-    width: 25%;
+    width: 22%;
 
 }
 
@@ -102,7 +103,8 @@ div.button-div {
 
 
 button.button-bye {
-    margin-left: 20px;
+    margin-left: 7px;
+    
     
 }
 button.button-word {
@@ -111,6 +113,13 @@ button.button-word {
 }
 
 #char-one {
+    
+    display: none;
+    margin: 6px;
+    padding: 10px;
+    
+}
+#char-four {
     
     display: none;
     margin: 6px;
@@ -150,4 +159,8 @@ div.winner {
     font-weight: bold;
     text-align: center;
     
+}
+
+div.word2 {
+    float: left;
 }
