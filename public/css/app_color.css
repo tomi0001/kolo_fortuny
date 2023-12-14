@@ -373,6 +373,28 @@ button.button-four:active {
 	position:relative;
 	top:1px;
 }
+button.button-five {
+        box-shadow: 0px 0px 11px 3px #7D187D;
+	background-color:#F22EEF;
+	border-radius:18px;
+	border:2px solid #7D187D;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Impact;
+	font-size:17px;
+	font-weight:bold;
+	padding:13px 10px;
+	text-decoration:none;
+	text-shadow:0px 0px 19px #dbdbdb;
+}
+button.button-five:hover {
+	background-color:#8A0E9A;
+}
+button.button-five:active {
+	position:relative;
+	top:1px;
+}
 button.button-three {
 	box-shadow: 0px 0px 11px 3px #dba15a;
 	background-color:#c2523e;
@@ -558,4 +580,24 @@ button.categories-all {
 	top:1px;
 }
 
-        
+div.new-game {
+    color: white;
+    font-size: 33px;
+    
+    background-color: rgba(26, 37, 125, 1);
+    -webkit-box-shadow: 0px 0px 30px -3px rgba(101, 183, 200, 1);
+-moz-box-shadow: 0px 0px 30px -3px rgba(101, 183, 200, 1);
+box-shadow: 0px 0px 30px -3px rgba(101, 183, 200, 1);
+}
+div.new-game:hover {
+    color: white;
+    font-size: 33px;
+    
+    background-color: rgba(26, 37, 125, 1);
+-webkit-box-shadow: 0px 0px 22px 8px rgba(102, 112, 214, 1);
+-moz-box-shadow: 0px 0px 22px 8px rgba(102, 112, 214, 1);
+box-shadow: 0px 0px 22px 8px rgba(102, 112, 214, 1);
+}
+a.new-game {
+    text-decoration: none;
+}

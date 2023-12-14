@@ -1,7 +1,7 @@
 @media (min-width: 1410px)  { 
 .page {
     margin-top: 30px;
-    width: 1400px;
+    width: 1700px;
     height: 800px;
     margin-left: auto;
     margin-right: auto;
@@ -22,7 +22,7 @@ div.button {
     padding-top: 10px;
     margin-left: auto;
     margin-right: auto;
-    width: 1200px;
+    width: 89%;
 
     text-align: center;
    
@@ -152,7 +152,7 @@ button.button-newGame {
 }
 div.button-selectCategory {
     
-    width: 300px;
+    width: 400px;
     height: 55px;
     max-height: 55px;
     border-radius: 25px;
@@ -247,7 +247,7 @@ div.space {
 }
 div.winner {
     width: 870px;
-    height: 200px;
+    height: 310px;
     position: fixed;
     bottom: 30%;
     right: 27%;
@@ -257,7 +257,7 @@ div.winner {
 }
 div.gameOver {
     width: 870px;
-    height: 200px;
+    height: 310px;
     position: fixed;
     bottom: 30%;
     right: 27%;
@@ -271,6 +271,16 @@ div.gameOver {
     margin-right: auto;
     text-align: center;
     font-size:35px;
+}
+
+
+div.new-game {
+    border-radius: 15px;
+    width: 300px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
 }
 
 }

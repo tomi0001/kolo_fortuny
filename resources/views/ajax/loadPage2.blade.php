@@ -129,8 +129,13 @@
     function gameEnd() {
         $("#winner").fadeIn(1000);
         $("#winner").addClass("gameOver");
-        $("#winner").html("Koniec gry wygrałeś <br>" + punktsWinner + " ptk");
+        $("#winner").html("Koniec gry wygrałeś <br>" + punktsWinner + " ptk<br> <a class='new-game'  href='javascript:location.reload()'><div class='new-game'>Nowa gra</div></a>");
         
+    }
+    function gameEndWinner() {
+        $("#winner").fadeIn(1000);
+        $("#winner").addClass("winner");
+        $("#winner").html("Koniec gry wygrałeś <br>" + punkts + " ptk <br> <a  class='new-game' href='javascript:location.reload()'><div class='new-game'>Nowa gra</div></a>");
     }
     showHideWord('{{$wordl->name}}');
     //if ('{{$bool}}' == "false") {
@@ -140,6 +145,13 @@
         //setPunkt(,true);   
     //}
     $(document).ready(function () {
+        
+       $(document).on("click", function(e){
+            if($(e.target).is(".button-five")){
+                 gameEndWinner();
+            }
+        });
+        
         $(document).on("click", function(e){
             if($(e.target).is(".button-one")){
         $('#char-one').fadeIn(1000);
@@ -237,6 +249,7 @@
         <button class="button-bye button-one">KUPUJE SPÓŁGŁOSKĘ -80 ptk</button>
         <button class="button-bye button-two">KUPUJE SAMOGŁOSKĘ -150 ptk</button>
         <button class="button-bye button-three">ZGADUJE HASŁO</button>
+        <button class="button-bye button-five">ZREZYGNUJ Z GRY</button>
     </div>
     
 </div>
