@@ -299,9 +299,9 @@ button.button-one {
 	cursor:pointer;
 	color:#ffffff;
 	font-family:Impact;
-	font-size:17px;
-	font-weight:bold;
-	padding:13px 10px;
+	
+	
+	
 	text-decoration:none;
 	text-shadow:0px 0px 19px #dbdbdb;
 }
@@ -315,9 +315,7 @@ button.button-disable {
 	cursor: not-allowed;
 	color:#ffffff;
 	font-family:Impact;
-	font-size:17px;
-	font-weight:bold;
-	padding:13px 10px;
+	
 	text-decoration:none;
 	text-shadow:0px 0px 19px #dbdbdb;
 }
@@ -338,9 +336,7 @@ button.button-two {
 	cursor:pointer;
 	color:#ffffff;
 	font-family:Impact;
-	font-size:17px;
-	font-weight:bold;
-	padding:13px 10px;
+	
 	text-decoration:none;
 	text-shadow:0px 0px 19px #dbdbdb;
 }
@@ -360,9 +356,7 @@ button.button-four {
 	cursor:pointer;
 	color:#ffffff;
 	font-family:Impact;
-	font-size:17px;
-	font-weight:bold;
-	padding:13px 10px;
+	
 	text-decoration:none;
 	text-shadow:0px 0px 19px #dbdbdb;
 }
@@ -382,9 +376,7 @@ button.button-five {
 	cursor:pointer;
 	color:#ffffff;
 	font-family:Impact;
-	font-size:17px;
-	font-weight:bold;
-	padding:13px 10px;
+	
 	text-decoration:none;
 	text-shadow:0px 0px 19px #dbdbdb;
 }
@@ -404,9 +396,7 @@ button.button-three {
 	cursor:pointer;
 	color:#ffffff;
 	font-family:Impact;
-	font-size:17px;
-	font-weight:bold;
-	padding:13px 10px;
+	
 	text-decoration:none;
 	text-shadow:0px 0px 19px #dbdbdb;
 }
@@ -426,8 +416,7 @@ button.button-word-three {
 	cursor:pointer;
 	color:#ffffff;
 	font-family:Arial;
-	font-size:21px;
-        font-weight: bold;
+	
 	
 	text-decoration:none;
 	text-shadow:0px 0px 0px #ad1c09;

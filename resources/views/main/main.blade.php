@@ -7,7 +7,8 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Koło fortuny</title>
+    <title>GRA SŁÓW</title>
+    <link rel="shortcut icon" href="{{ asset('./image/ikona.png')}}">
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.bunny.net">

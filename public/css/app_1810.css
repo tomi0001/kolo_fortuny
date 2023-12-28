@@ -30,6 +30,21 @@ div.button {
     
     
 }
+div.punkt {
+    padding-top: 17px;
+    float: left;
+    width: 22%;
+
+}
+div.down {
+
+    width: 100%;
+    height: 120px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+}
 #newGame {
     padding-top: 300px;
 }
@@ -282,5 +297,66 @@ div.new-game {
     margin-right: auto;
     padding-top: 10px;
 }
+div.button-div {
+    width: 70%;
 
+    float: left;
+    padding-top: 30px;
+    
+
+}
+button.button-bye {
+    margin-left: 7px;
+    
+    
+}
+
+button.button-one {
+   
+	font-size:17px;
+	font-weight:bold;
+	padding:13px 10px;
+	
+}
+button.button-disable {
+   
+	font-size:17px;
+	font-weight:bold;
+	padding:13px 10px;
+}
+
+
+button.button-two {
+	font-size:17px;
+	font-weight:bold;
+	padding:13px 10px;
+}
+
+button.button-four {
+	font-size:17px;
+	font-weight:bold;
+	padding:13px 10px;
+}
+
+button.button-five {
+        font-size:17px;
+	font-weight:bold;
+	padding:13px 10px;
+}
+
+button.button-three {
+	font-size:17px;
+	font-weight:bold;
+	padding:13px 10px;
+}
+
+button.button-word-three {
+	
+	font-size:21px;
+        font-weight: bold;
+	
+}
+
+
+        
 }

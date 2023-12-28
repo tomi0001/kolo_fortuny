@@ -1,37 +1,27 @@
 <div class="title">
     <span class="color-1">
-    K
+    G
     </span>
     <span class="color-2">
-    O
+    R
     </span>
     <span class="color-3">
-    Ł
+    A
     </span>
-    <span class="color-4">
-    O
-    </span>
+    
     &nbsp;
     &nbsp;
     <span class="color-5">
-    F
+    S
     </span>
     <span class="color-6">
-    O
+    Ł
     </span>
     <span class="color-7">
-    R
+    Ó
     </span>
     <span class="color-8">
-    T
+    W
     </span>
-    <span class="color-9">
-    U
-    </span>
-    <span class="color-10">
-    N
-    </span>
-    <span class="color-11">
-    Y
-    </span>
+
 </div>

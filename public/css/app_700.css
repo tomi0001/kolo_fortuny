@@ -1,8 +1,8 @@
 @media (min-width: 700px) and (max-width: 1210px)  {
 .page {
     margin-top: 30px;
-    width: 600px;
-    height: 800px;
+    width: 890px;
+    height: 1000px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 40px;
@@ -20,7 +20,7 @@
 div.button {
     padding-top: 80px;
     
-    width: 600px;
+    width: 870px;
 
     text-align: center;
 
@@ -140,7 +140,7 @@ button.button-newGame {
     font-weight: bold;
 }
 div.button-selectCategory {
-    width: 200px;
+    width: 250px;
     height: 65px;
     border-radius: 25px;
     font-size: 20px;
@@ -189,7 +189,128 @@ div.space {
     font-size: 19px;
 }
 .font-large {
-    font-size: 24px;
+    font-size: 20px;
+}
+div.down {
+
+    width: 100%;
+    height: 200px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+}
+div.punkt {
+    padding-top: 17px;
+    float: left;
+    width: 31%;
+
+}
+div.button-div {
+    width: 65%;
+
+    float: left;
+    padding-top: 10px;
+    
+
+}
+button.button-bye {
+    margin-left: 4px;
+    width: 150px;
+    margin: 8px;
+    height: 70px;
+    
+    
+}
+button.button-one {
+   
+	font-size:13px;
+	font-weight:bold;
+	padding:8px 5px;
+	
+}
+button.button-disable {
+   
+	font-size:13px;
+	font-weight:bold;
+	padding:8px 5px;
 }
 
+
+button.button-two {
+	font-size:13px;
+	font-weight:bold;
+	padding:8px 5px;
+}
+
+button.button-four {
+	font-size:13px;
+	font-weight:bold;
+	padding:8px 5px;
+}
+
+button.button-five {
+        font-size:13px;
+	font-weight:bold;
+	padding:8px 5px;
+}
+
+button.button-three {
+	font-size:13px;
+	font-weight:bold;
+	padding:8px 5px;
+}
+
+button.button-word-three {
+	
+	font-size:18px;
+        font-weight: bold;
+	
+}
+
+#char-one {
+    width: 700px;
+    height: 210px;
+    position: fixed;
+    bottom: 190px;
+    right: 100px;
+    
+    
+}
+#char-four {
+    width: 600px;
+    height: 89px;
+    position: fixed;
+    bottom: 190px;
+    right: 100px;
+    
+    
+}
+#char-two {
+    width: 600px;
+    height: 120px;
+    position: fixed;
+    bottom: 190px;
+    right: 100px;
+}
+
+#char-three {
+    width: 700px;
+    height: 200px;
+    position: fixed;
+    bottom: 190px;
+    right: 100px;
+}
+
+div.winner {
+    width: 870px;
+    height: 310px;
+    position: fixed;
+    bottom: 15%;
+    right: 2%;
+    
+    font-size: 60px;
+    
+}
+        
 }
