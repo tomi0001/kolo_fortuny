@@ -256,6 +256,53 @@ div.space {
     bottom: 150px;
     right: 400px;
 }
+div.char {
+    
+    width: 45px;
+    height: 50px;
+    margin-right: 10px;
+    margin-top: 30px;
+    float: left;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: bold;
+   
+    
+    
+}
+div.char-select {
+    width: 45px;
+    height: 50px;
+    margin-right: 10px;
+    margin-top: 30px;
+    padding-top: -50px;
+    float: left;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 33px;
+    font-weight: bold;
+}
+div.char-select2 {
+    width: 45px;
+    height: 50px;
+    margin-right: 10px;
+    margin-top: 30px;
+    padding-top: -50px;
+    float: left;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 33px;
+    font-weight: bold;
+}
+div.empty {
+    float: left;
+    width: 45px;
+    padding: 5px;
+    height: 50px;
+    margin-right: 10px;
+    margin-top: 30px;
+}
 #wordText {
     width: 850px;
     height: 100px;
@@ -289,6 +336,7 @@ div.gameOver {
 }
 
 
+
 div.new-game {
     border-radius: 15px;
     width: 300px;
@@ -297,6 +345,7 @@ div.new-game {
     margin-right: auto;
     padding-top: 10px;
 }
+
 div.button-div {
     width: 70%;
 

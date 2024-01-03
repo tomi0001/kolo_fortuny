@@ -148,7 +148,10 @@
         
        $(document).on("click", function(e){
             if($(e.target).is(".button-five")){
-                 gameEndWinner();
+                var bool = confirm("Czy na pewno zrezygnowac z gry");
+                if (bool == true) {
+                     gameEndWinner();
+                }
             }
         });
         
@@ -245,11 +248,17 @@
         <span class="punkt">  DO ZDOBYCIA: {{$wordl->punkt}} ptk</span> 
     </div>
     <div class="button-div">
+        
         <button class="button-bye button-four">KUPUJE CYFRĘ -50 ptk</button>
+
         <button class="button-bye button-one">KUPUJE SPÓŁGŁOSKĘ -80 ptk</button>
+            
         <button class="button-bye button-two">KUPUJE SAMOGŁOSKĘ -150 ptk</button>
+            
         <button class="button-bye button-three">ZGADUJE HASŁO</button>
+            
         <button class="button-bye button-five">ZREZYGNUJ Z GRY</button>
+         
     </div>
     
 </div>

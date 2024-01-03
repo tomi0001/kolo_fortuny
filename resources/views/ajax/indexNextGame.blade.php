@@ -6,7 +6,7 @@
               <div class="row">
                   
                     @foreach ($category as $cat)
-                    <div class="col-xl-4 col-sm-6 col-md-1  ">
+                    <div class="col-xl-4 col-sm-3 col-md-4  ">
                         @if (strlen($cat->category) > 21 )
                             <div class=" button-selectCategory space button-selectCategory-{{rand(2,10)}} " onclick="loadNextGame('page2',{{$cat->id}})"><span class="font-verysmall" id="iteration_{{$cat->id}}" >{{$cat->category}} + {{$cat->punkt}} ptk</span></div>
 

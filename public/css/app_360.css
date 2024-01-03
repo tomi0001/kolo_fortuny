@@ -19,7 +19,11 @@
 }
 div.button {
     
+   padding-top: 100px;
+    
+    
 
+    text-align: center;
     
     
 }
@@ -129,17 +133,19 @@ div.title {
 }
 
 button.button-newGame {
-    width: 350px;
-    height: 80px;
+    width: 280px;
+    height: 100px;
     border-radius: 25px;
-    font-size: 25px;
+    font-size: 21px;
     font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
 }
 div.button-selectCategory {
-    width: 280px;
-    height: 65px;
+    width: 220px;
+    height: 90px;
     border-radius: 25px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     margin-left: auto;
     margin-right: auto;
@@ -147,9 +153,9 @@ div.button-selectCategory {
     
 }
 div.button-selectCategory-1 {
-    width: 350px;
-    height: 65px;
-    font-size: 25px;
+    width: 280px;
+    height: 90px;
+    font-size: 18px;
 }
 
 
@@ -162,7 +168,7 @@ div.center-title {
    
 }
 span.message {
-    font-size: 35px;
+    font-size: 20px;
     font-weight: bold;
     
 }
@@ -175,17 +181,197 @@ div.space {
     
 }
 .font-verysmall {
-    font-size: 10px;
+    font-size: 12px;
 }
 .font-small {
-    font-size: 12px;
+    font-size: 15px;
 }
 
 .font-normal {
     font-size: 19px;
 }
 .font-large {
-    font-size: 24px;
+    font-size: 22px;
+}
+div.punkt {
+    padding-top: 17px;
+    float: left;
+    width: 80%;
+    clear: both;
+
+}
+div.button-div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  width: 280px;
+  padding-left: 40px;
 }
 
+button.button-bye {
+  flex: 1 0 110px;
+  padding: 5px 5px;
+  min-height: 80px;
+  max-width: 120px; 
+}
+button.button-one {
+   
+	font-size: 12px;
+	font-weight:bold;
+        
+	
+       
+	
+}
+button.button-disable {
+   
+	font-size:13px;
+	font-weight:bold;
+	
+}
+
+
+button.button-two {
+	font-size: 12px;
+	font-weight:bold;
+	
+}
+
+button.button-four {
+	font-size: 12px;
+	font-weight:bold;
+	
+        
+}
+
+button.button-five {
+      font-size: 12px;
+	font-weight:bold;
+        max-width: 260px;
+	
+}
+
+button.button-three {
+	font-size: 12px;
+	font-weight:bold;
+	
+}
+
+button.button-word-three {
+	
+	font-size: 12px;
+        font-weight: bold;
+	
+}
+
+#char-one {
+    width: 300px;
+    height: 410px;
+    position: fixed;
+    bottom: 120px;
+    right: 50px;
+    
+    
+}
+#char-four {
+    width: 300px;
+    height: 130px;
+    position: fixed;
+    bottom: 120px;
+    right: 50px;
+    
+    
+}
+#char-two {
+    width: 300px;
+    height: 120px;
+    position: fixed;
+    bottom: 120px;
+    right: 50px;
+}
+
+#char-three {
+    width: 300px;
+    height: 200px;
+    position: fixed;
+    bottom: 120px;
+    right: 50px;
+}
+div.char {
+    
+    width: 30px;
+    height: 37px;
+    margin-right: 10px;
+    margin-top: 10px;
+    float: left;
+    text-align: center;
+    border-radius: 7px;
+    font-size: 30px;
+    font-weight: bold;
+   
+    
+    
+}
+div.empty {
+    float: left;
+    width: 30px;
+    padding: 5px;
+    height: 37px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+#wordText {
+    height: 100px;
+}
+div.char-select {
+    width: 30px;
+    height: 37px;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding-top: -50px;
+    float: left;
+    text-align: center;
+    border-radius: 7px;
+    font-size: 25px;
+    font-weight: bold;
+}
+div.char-select2 {
+    width: 30px;
+    height: 37px;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding-top: -50px;
+    float: left;
+    text-align: center;
+    border-radius: 7px;
+    font-size: 25px;
+    font-weight: bold;
+}
+div.winner {
+    width: 370px;
+    height: 500px;
+    position: fixed;
+    bottom: 15%;
+    right: 2%;
+    
+    font-size: 60px;
+    
+}
+      div.new-game {
+    border-radius: 15px;
+    width: 300px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+}  
+div.gameOver {
+    width: 370px;
+    height: 500px;
+    position: fixed;
+    bottom: 15%;
+    right: 2%;
+    text-align: center;
+    font-size: 60px;
+}
 }
