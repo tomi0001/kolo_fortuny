@@ -13,6 +13,7 @@
         <div class="button">
             <div class="button-selectCategory space button-selectCategory-1"  onclick="loadNewGame('page2',0)">WSZYSTKIE CATEGORIE + 20000 ptk</div>
             <div style="float: left; " class="scroll-y ">
+             <div class="container">
               <div class="row">
                   
                     @foreach ($category as $cat)
@@ -35,6 +36,7 @@
                     </div>
                     @endforeach
               </div>
+             </div>
             </div>
         </div>        
     </div>

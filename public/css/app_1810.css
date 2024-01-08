@@ -60,6 +60,7 @@ div.page3 {
         overflow-y: auto;
         margin-bottom: 10px;
         color: green;
+        width: 1500px;
       }
       
       .scroll-y::-webkit-scrollbar {

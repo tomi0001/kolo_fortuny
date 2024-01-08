@@ -35,6 +35,7 @@ div.button {
         overflow-y: auto;
         margin-bottom: 10px;
         color: green;
+        width: 600px
       }
       
       .scroll-y::-webkit-scrollbar {
