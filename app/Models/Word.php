@@ -10,7 +10,7 @@ class Word extends Model
 {
     use HasFactory;
     public static function selectCategory() {
-        return self::select(DB::raw("MAX(id) as id"))->selectRaw("category as category")->selectRaw("punkt as punkt")->groupBy("punkt")->groupBy("category")->inRandomOrder()->limit(2)->get();
+        return self::select(DB::raw("MAX(id) as id"))->selectRaw("category as category")->selectRaw("punkt as punkt")->groupBy("punkt")->groupBy("category")->inRandomOrder()->get();
     }
     public static function selectNameCategory(int $id) {
         return self::selectRaw("category as category")->selectRaw("punkt as punkt")->where("id",$id)->first();
