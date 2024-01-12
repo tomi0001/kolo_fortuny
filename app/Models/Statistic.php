@@ -9,11 +9,12 @@ class Statistic extends Model
 {
     use HasFactory;
     protected $table = "statistic";
-    public  function saveStatistic(string $title,string $ip,string|null $http_user) :void  {
+    public  function saveStatistic(string $title,string $ip,string|null $http_user,string|null $http_referer) :void  {
         $statis = new self;
         $statis->title = $title;
         $statis->http_user_agent = $http_user;
         $statis->ip = $ip;
+        $statis->http_referer = $http_referer;
         $statis->save();
     }
     public static function loadStatistic(string|null $type)  {

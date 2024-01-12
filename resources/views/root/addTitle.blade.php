@@ -7,7 +7,7 @@
 
 <div class='addTitle'>
     <table class='table addTitle'>
-        <form action='{{route('admin.addTitleSubmit')}}' method='get'>
+        <form  method='get' id='addTitle'>
             <tr >
                 <td>Nazwa hasła</td>
                 <td><textarea name="nameWord" class="form-control" rows="5">{{request()->input("nameWord")}}</textarea></td>
@@ -35,21 +35,15 @@
             </tr>
             <tr>
                 
-                <td colspan="2" class='center'><input type='submit' class='btn btn-primary btn-lg' value='DODAJ HASŁO' ></td>
+                <td colspan="2" class='center'><input type="button"  class='btn btn-primary btn-lg' onclick="addTitle('{{route('admin.addTitleSubmit')}}')" value="DODAJ HASŁO"></td>
             </tr>
-            @csrf
+            
         </form>
         <tr>
             <td colspan="2" class='center'>
-                @if (isset($error)) 
-                    @foreach($error as $errors)
-                        <span class="error">{{$errors}}</span> <br>
-                    @endforeach
-                @endif
-                @if (isset($succes)) 
-                    <span class="succes">{{$succes}}</span>
-                @endif
-                
+                <div id='addTitle-div'>
+               
+                </div>
                 
             </td>
         </tr>

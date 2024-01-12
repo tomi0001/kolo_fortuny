@@ -105,3 +105,58 @@ function showHideWord(word) {
     $("#word").html(string);
 }
 
+function addTitle(url) {
+     $.ajax({
+        url : url,
+            method : "get",
+            data : 
+            $("#addTitle").serialize()
+            ,
+            dataType : "html",
+            
+    })
+    .done(function(response) {
+        $("#addTitle-div").html(response);
+       
+    
+
+    })
+
+    .fail(function() {
+        $("#addTitle-div").html( "<div class='ajaxError'>Wystąpił błąd</div>" );
+    });
+}
+function updateCategory(id) {
+    var name = $("#name_" + id).val();
+    var punkt = $("#punkt_" + id).val();
+    //alert(name);
+         $.ajax({
+        url : urlArray[2],
+            method : "get",
+            data : 
+            "id=" + id + "&name=" + name + "&punkt=" + punkt
+            ,
+            dataType : "html",
+            
+    })
+    .done(function(response) {
+        $("#category_" + id).html(response);
+       
+    
+
+    })
+
+    .fail(function() {
+        $("#category_" + id).html( "<div class='ajaxError'>Wystąpił błąd</div>" );
+    });
+}
+
+function editCategories(id) {
+    var name = $(".name_" + id).text();
+    var punkt = $(".punkt_" + id).text();
+    $(".name_" + id).html("<input type=text id='name_" + id  + "' class='form-control' value=" + name + ">");
+    $(".punkt_" + id).html("<input type=number id='punkt_" + id  + "' class='form-control' value=" + punkt + ">");
+    $(".linkss_" + id).text("ZAPISZ");
+    $(".linkss_" + id).attr("onclick","updateCategory(" + id + ")");
+}
+

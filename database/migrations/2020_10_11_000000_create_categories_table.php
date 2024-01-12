@@ -6,7 +6,7 @@
  */
 
 /**
- * Description of 2021_10_12_000000_create_statistic_table
+ * Description of 2020_10_12_000000_create_words_table
  *
  * @author tomi3
  */
@@ -17,12 +17,10 @@ return new class extends Migration
 {
        public function up(): void
         {
-            Schema::create('statistic', function (Blueprint $table) {
+            Schema::create('categories', function (Blueprint $table) {
                 $table->id();
-                $table->string('http_user_agent');
-                $table->string('ip');
-                $table->string('title');
-                $table->string("http_referer",800)->nullable();
+                $table->string('name');
+                $table->integer('punkt')->default(5000);
                 $table->timestamps();
             });
         }
@@ -32,6 +30,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('statistic');
+        Schema::dropIfExists('users');
     }
 };

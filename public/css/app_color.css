@@ -590,3 +590,9 @@ box-shadow: 0px 0px 22px 8px rgba(102, 112, 214, 1);
 a.new-game {
     text-decoration: none;
 }
+
+a.links {
+    cursor: pointer;
+    color: white;
+    
+}

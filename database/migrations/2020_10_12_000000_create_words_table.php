@@ -20,8 +20,8 @@ return new class extends Migration
             Schema::create('words', function (Blueprint $table) {
                 $table->id();
                 $table->text('name');
-                $table->string('category');
-                $table->integer('punkt')->default(5000);
+                $table->bigInteger('categoryId')->unsigned();
+                $table->foreign("categoryId")->references("id")->on("categories");
                 $table->timestamps();
             });
         }

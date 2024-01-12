@@ -56,17 +56,32 @@ class AdminController extends BaseController {
         
     }
     public function addTitleSubmit(Request $request) {
+        
         $Statistic = new Statistic;
         $Statistic->saveStatistic($request," dodawanie hasła");
         $Word = new Word;
         $Word->checkError($request);
-        $list = $Word->selectCategory();
+        //$list = $Word->selectCategory();
         if (count($Word->error) > 0) {
-            return View("root.addTitle")->with("listWord",$list)->with("error",$Word->error);
+            return View("ajax.error")->with("error",$Word->error);
         }
         else {
             $Word->addWord($request->get("nameWord"),$request->get("punkt"));
-            return back()->withInput();
+            return View("ajax.succes")->with("succes","pomyślnie dodano");
         }
+    }
+    public function showCategories(Request $request,$type = "created_at") {
+        $Statistic = new Statistic;
+        $Statistic->saveStatistic($request," Wyświetlanie kategorii");
+        $Word = new Word;
+        $list = $Word->selectShowCategories($type);
+        return View("root.showCategories")->with("listCategories",$list);
+    }
+    public function updateCategories(Request $request) {
+        $Statistic = new Statistic;
+        $Statistic->saveStatistic($request," Edycja kategpori " . $request->get("id"));
+        $Word = new Word;
+        $Word->updateCategories($request);
+        return View("ajax.updateCategory");
     }
 }

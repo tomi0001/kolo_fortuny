@@ -15,9 +15,7 @@
 
     <!-- Scripts -->
     @include('include.include')
-    <link href="{{asset('../public/css/app.css')}}" rel="stylesheet">
-    <link href="{{asset('../public/css/app_color.css')}}" rel="stylesheet">
-    <script src="{{ asset('resources/js/app.js') }}"></script>   
+  
 </head>
 <body>
     @yield('content')

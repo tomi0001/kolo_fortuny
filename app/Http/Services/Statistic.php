@@ -11,7 +11,7 @@ use Illuminate\Http\Request;
 class Statistic {
     public function saveStatistic(Request $request,string $title ) :void {
         $statis = new modelsStatistic;
-        $statis->saveStatistic($title,$request->server('REMOTE_ADDR'),$request->server('HTTP_USER_AGENT'));
+        $statis->saveStatistic($title,$request->server('REMOTE_ADDR'),$request->server('HTTP_USER_AGENT'),$request->server('HTTP_REFERER'));
         
     }
     public function loadStatistic(string $type) {

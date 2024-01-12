@@ -7,6 +7,7 @@ use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
 use App\Models\User;
 use App\Models\Word as wordModels;
+use App\Models\Categorie as categorieModels;
 use Illuminate\Http\Request;
 use Hash;
 use Auth;
@@ -15,7 +16,7 @@ class Word {
     public $nameCategory  = "";
     public $error = [];
     public function selectCategory() {
-        $word = wordModels::selectCategory();
+        $word = categorieModels::selectCategory();
         return $word;
     }
     public function selectWordl(int $id = 0) {
@@ -44,7 +45,25 @@ class Word {
         }
     }
     public function addWord(string $name,int $punkt) {
+        $check =  categorieModels::selectIsExistCategory($this->nameCategory);
+        if ($check == null ) {
+            $categorieModels = new categorieModels;
+            $id = $categorieModels->addCategory($this->nameCategory,$punkt);
+          
+        }
+        else {
+            $id = $check->id;
+        }
+       
         $wordModels = new wordModels;
-        $wordModels->addWord($name,$this->nameCategory,$punkt);
+        $wordModels->addWord($name,$id);
+    }
+    public function selectShowCategories(string $type) {
+        $listCategories = categorieModels::showAllCategories($type);
+        return $listCategories;
+    }
+    public function updateCategories(Request $request) {
+        $CategorieModels = new categorieModels;
+        $CategorieModels->updateCategory($request);
     }
 }

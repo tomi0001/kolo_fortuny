@@ -6,23 +6,26 @@
 </div>
 
 <div class='loadStatistic'>
-    <table class='table'>
+    <table class='table' style="table-layout: fixed;">
            <tr class='statistic'>
-               <td style='width: 10%;'>
+               <td style='width: 6%;'>
                    id
                </td>
-               <td>
+               <td  style='width: 30%;'>
                    <a href='{{ route('admin.statistik')}}/http_user_agent'>http user agent</a>
                </td>
-               <td>
+               <td  style='width: 30%; '>
+                   <a href='{{ route('admin.statistik')}}/http_referer'>http referer</a>
+               </td>
+               <td  style='width: 10%;'>
                    <a href='{{ route('admin.statistik')}}/ip'>ip</a>
                    
                </td>
-               <td>
+               <td  style='width: 10%;'>
                    <a href='{{ route('admin.statistik')}}/title'>co robił</a>
                    
                </td>
-               <td>
+               <td  style='width: 10%;'>
                    <a href='{{ route('admin.statistik')}}'>data</a>
                    
                </td>
@@ -34,6 +37,9 @@
                </td>
                <td>
                    {{$sta->http_user_agent}}
+               </td>
+               <td style="word-wrap: break-word;">
+                   {{$sta->http_referer}}
                </td>
                <td>
                    {{$sta->ip}}

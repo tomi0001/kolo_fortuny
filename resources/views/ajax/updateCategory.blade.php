@@ -1,0 +1,1 @@
+<td colspan="3">Pomyslnie zmodyfikowano</td>

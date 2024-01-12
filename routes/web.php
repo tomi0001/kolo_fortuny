@@ -37,7 +37,12 @@ Route::get('/root/addTtile/',[App\Http\Controllers\AdminController::class, 'addT
 Route::get('/root/addTitleSubmit/',[App\Http\Controllers\AdminController::class, 'addTitleSubmit'])
                     ->name("admin.addTitleSubmit")
                     ->middleware('auth');
-
+Route::get('/root/showCategories/{type?}',[App\Http\Controllers\AdminController::class, 'showCategories'])
+                    ->name("admin.showCategories")
+                    ->middleware('auth');
+Route::get('/root/updateCategories',[App\Http\Controllers\AdminController::class, 'updateCategories'])
+                    ->name("admin.updateCategories")
+                    ->middleware('auth');
 
 Route::get('/logout', [App\Http\Controllers\Auth\LoginController::class, 'logout'])->name('logoutt');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
