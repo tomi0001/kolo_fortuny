@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use DB;
-
+use Illuminate\Http\Request;
 class Word extends Model
 {
     use HasFactory;
@@ -21,5 +21,11 @@ class Word extends Model
         $word->name = $name;
         $word->categoryId = $category;
         $word->save();
+    }
+    public static function showAllWord(string|null $type) {
+        return self::join("categories","categories.id","words.categoryId")->selectRaw("words.name as name")->selectRaw("categories.punkt as punkt")->selectRaw("words.id as id")->orderBy("$type","DESC")->paginate(30);
+    }
+    public function updateWord(Request $request) {
+        return self::where("id",$request->get("id"))->update(["name" => $request->get("name")]);
     }
 }

@@ -12,6 +12,9 @@
     <div class='menu-long menu'>
         <a href='{{route('admin.showCategories')}}'>Wyświetl kategorie</a>
     </div>
+    <div class='menu-long menu'>
+        <a href='{{route('admin.showWord')}}'>Wyświetl hasła</a>
+    </div>
     <div class='menu'>
         <a href='{{route('logoutt')}}'>Wyloguj się</a>
     </div>

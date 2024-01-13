@@ -40,8 +40,15 @@ Route::get('/root/addTitleSubmit/',[App\Http\Controllers\AdminController::class,
 Route::get('/root/showCategories/{type?}',[App\Http\Controllers\AdminController::class, 'showCategories'])
                     ->name("admin.showCategories")
                     ->middleware('auth');
+Route::get('/root/showWord/{type?}',[App\Http\Controllers\AdminController::class, 'showWord'])
+                    ->name("admin.showWord")
+                    ->middleware('auth');
+
 Route::get('/root/updateCategories',[App\Http\Controllers\AdminController::class, 'updateCategories'])
                     ->name("admin.updateCategories")
+                    ->middleware('auth');
+Route::get('/root/updateWord',[App\Http\Controllers\AdminController::class, 'updateWord'])
+                    ->name("admin.updateWord")
                     ->middleware('auth');
 
 Route::get('/logout', [App\Http\Controllers\Auth\LoginController::class, 'logout'])->name('logoutt');

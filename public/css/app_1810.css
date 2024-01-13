@@ -94,7 +94,7 @@ td.center {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    width: 800px;
+    width: 950px;
     height: 50px;
     border-radius: 20px;
     margin-top: 15px;
@@ -109,6 +109,11 @@ div.menu-long {
     margin: 10px;
     float: left;
     width: 150px;
+}
+div.search-statistic {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
 }
 div.changePassword {
     margin-left: auto;

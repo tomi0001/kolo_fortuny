@@ -6,6 +6,20 @@
 </div>
 
 <div class='loadStatistic'>
+    <div class="search-statistic">
+        WYSZUKAJ
+        <form action="{{route('admin.statistik')}}" method="get">
+            <input type="text" class="form-control" name="search" placeholder="fraza">
+            <select class="form-control" name="searchType">
+                <option value="http_user_agent">http user agent</option>
+                <option value="http referer">http referer</option>
+                <option value="ip">ip</option>
+                <option value="what_work">co robił</option>
+                <option value="date">data</option>
+            </select>
+            <input type="submit" value="WYSZUKAJ" class="btn btn-primary">
+        </form>
+    </div>
     <table class='table' style="table-layout: fixed;">
            <tr class='statistic'>
                <td style='width: 6%;'>
@@ -54,8 +68,10 @@
                 
            @endforeach
            <tr>
+               
+      
                <td colspan="5">
-                   {{$statistic->links('pagination::bootstrap-5')}}
+                   {{$statistic->appends(['searchType'=>Request::get('searchType')])->appends(['search'=>Request::get('search')])->links('pagination::bootstrap-5')}}
                </td>
                
            </tr>

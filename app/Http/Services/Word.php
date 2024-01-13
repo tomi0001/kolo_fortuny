@@ -66,4 +66,12 @@ class Word {
         $CategorieModels = new categorieModels;
         $CategorieModels->updateCategory($request);
     }
+    public function selectShowWord(string $type) {
+        $listWord = wordModels::showAllWord($type);
+        return $listWord;
+    }
+    public function updateWord(Request $request) {
+        $WordModels = new wordModels;
+        $WordModels->updateWord($request);
+    }
 }

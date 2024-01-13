@@ -44,7 +44,7 @@ class AdminController extends BaseController {
     public function statistik(Request $request,$type = "created_at") {
         $Statistic = new Statistic;
         $Statistic->saveStatistic($request,"statyski przeglądanie");
-        $statistic = $Statistic->loadStatistic($type);
+        $statistic = $Statistic->loadStatistic($type,$request);
         return View("root.loadStatistic")->with("statistic",$statistic);
     }
     public function addTtile(Request $request) {
@@ -83,5 +83,19 @@ class AdminController extends BaseController {
         $Word = new Word;
         $Word->updateCategories($request);
         return View("ajax.updateCategory");
+    }
+    public function showWord(Request $request,$type = "words.created_at") {
+        $Statistic = new Statistic;
+        $Statistic->saveStatistic($request," Wyświetlanie haseł");
+        $Word = new Word;
+        $list = $Word->selectShowWord($type);
+        return View("root.showWord")->with("listWord",$list);
+    }
+    public function updateWord(Request $request) {
+        $Statistic = new Statistic;
+        $Statistic->saveStatistic($request," Edycja hasła  " . $request->get("id"));
+        $Word = new Word;
+        $Word->updateWord($request);
+        return View("ajax.updateWord");
     }
 }

@@ -14,8 +14,35 @@ class Statistic {
         $statis->saveStatistic($title,$request->server('REMOTE_ADDR'),$request->server('HTTP_USER_AGENT'),$request->server('HTTP_REFERER'));
         
     }
-    public function loadStatistic(string $type) {
-       $statistic =  modelsStatistic::loadStatistic($type);
+        /*
+     *  <option value="http_user_agent">http user agent</option>
+                <option value="http referer">http referer</option>
+                <option value="ip">ip</option>
+                <option value="what_work">co robił</option>
+                <option value="date">data</option>
+     */
+    public function loadStatistic(string $type,Request $request) {
+        switch($request->get("searchType")) {
+            case 'http_user_agent':
+                $statistic =  modelsStatistic::loadStatisticUserAgent($type,$request->get("search"));
+                break;
+            case 'http referer':
+                $statistic =  modelsStatistic::loadStatisticHttpReferer($type,$request->get("search"));
+                break;
+            case 'ip':
+                $statistic =  modelsStatistic::loadStatisticIp($type,$request->get("search"));
+                break;
+            case 'what_work':
+                $statistic =  modelsStatistic::loadStatisticTitle($type,$request->get("search"));
+                break;
+            case 'date':
+                $statistic =  modelsStatistic::loadStatisticDate($type,$request->get("search"));
+                break;
+            default:
+                $statistic =  modelsStatistic::loadStatistic($type);
+                break;
+        }
+       
        return $statistic;
         
     }

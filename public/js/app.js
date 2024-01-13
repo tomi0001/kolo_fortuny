@@ -154,9 +154,37 @@ function updateCategory(id) {
 function editCategories(id) {
     var name = $(".name_" + id).text();
     var punkt = $(".punkt_" + id).text();
-    $(".name_" + id).html("<input type=text id='name_" + id  + "' class='form-control' value=" + name + ">");
+    $(".name_" + id).html("<input type='text' id='name_" + id  + "' class='form-control' value='" + name.trim() + "'>");
     $(".punkt_" + id).html("<input type=number id='punkt_" + id  + "' class='form-control' value=" + punkt + ">");
     $(".linkss_" + id).text("ZAPISZ");
     $(".linkss_" + id).attr("onclick","updateCategory(" + id + ")");
 }
+function editWord(id) {
+    var name = $(".name_" + id).text();
+    $(".name_" + id).html("<input type=text id='name_" + id  + "' class='form-control' value='" + name.trim() + "'>");
+    $(".linkss_" + id).text("ZAPISZ");
+    $(".linkss_" + id).attr("onclick","updateWord(" + id + ")");
+}
+function updateWord(id) {
+    var name = $("#name_" + id).val();
 
+         $.ajax({
+        url : urlArray[3],
+            method : "get",
+            data : 
+            "id=" + id + "&name=" + name 
+            ,
+            dataType : "html",
+            
+    })
+    .done(function(response) {
+        $("#word_" + id).html(response);
+       
+    
+
+    })
+
+    .fail(function() {
+        $("#word_" + id).html( "<div class='ajaxError'>Wystąpił błąd</div>" );
+    });
+}
