@@ -164,6 +164,7 @@
         //setPunkt(,true);   
     //}
     $(document).ready(function () {
+        $(".page").toggleClass("page page-at");
         
    
         
@@ -247,8 +248,9 @@
 @if ($allCategories == 1)
     <div class="category">WSZYSTKIE KATEGORIE</div>
 @else
-    <div class="category">{{$wordl->category}}</div>
+    <div class="category">{{$nameCategory}}</div>
 @endif
+
 <div id="word"></div>
 
 

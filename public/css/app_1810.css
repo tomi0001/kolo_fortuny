@@ -1,4 +1,15 @@
 @media (min-width: 1410px)  { 
+    #word {
+    
+    
+    
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 70%;
+    Word-wrap:no-wrap;
+    
+}
 .page {
     margin-top: 30px;
     width: 1700px;
@@ -8,6 +19,13 @@
     border-radius: 40px;
     
     
+}
+.page-at {
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 800px;
+    Word-wrap:no-wrap;
 }
 #menu {
      margin-left: auto;
@@ -384,7 +402,12 @@ button.button-disable {
 	padding:13px 10px;
 }
 
-
+div.category-title {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 45px;
+}
 button.button-two {
 	font-size:17px;
 	font-weight:bold;

@@ -22,9 +22,10 @@ class Word {
     public function selectWordl(int $id = 0) {
         if ($id == 0) {
             $word = wordModels::selectWord();
+            $this->nameCategory = null;
         }
         else {
-            $category = categorieModels::selectNameCategory($id);
+            $this->nameCategory = categorieModels::selectNameCategory($id)->category;
             $word = wordModels::selectWordId($id);
         }
         

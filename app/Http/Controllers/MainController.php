@@ -24,7 +24,8 @@ class MainController extends BaseController
         $Word = new Word;
         $wordl = $Word->selectWordl($request->get("id"));
         //print $request->get("id");
-        return View("ajax.loadPage2")->with("wordl",$wordl)->with("bool",$request->get("bool"))->with("punktsAt",0)->with("allCategories",$request->get("allCategories"));
+        return View("ajax.loadPage2")->with("wordl",$wordl)->with("bool",$request->get("bool"))
+                ->with("punktsAt",0)->with("allCategories",$request->get("allCategories"))->with("nameCategory",$Word->nameCategory);
     }
     public function loadPageNext(Request $request) {
         $Statistic = new Statistic;

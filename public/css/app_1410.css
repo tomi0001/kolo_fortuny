@@ -1,4 +1,15 @@
 @media (min-width: 1210px) and (max-width: 1410px) {
+    #word {
+    
+    
+    
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 70%;
+    Word-wrap:no-wrap;
+    
+}
 .page {
     margin-top: 30px;
     width: 1200px;
@@ -125,6 +136,12 @@ td.center {
     border-radius: 20px;
     margin-top: 15px;
     
+}
+div.category-title {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 45px;
 }
 div.menu {
     margin: 10px;
