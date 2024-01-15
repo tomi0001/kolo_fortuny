@@ -11,7 +11,7 @@ class Word extends Model
     use HasFactory;
     
     public static function selectWord() {
-        return self::select(DB::raw("name as name"))->selectRaw("category as category")->selectRaw("20000 as punkt")->inRandomOrder()->first();
+        return self::join("categories","categories.id","words.categoryId")->select(DB::raw("words.name as name"))->selectRaw("words.categoryId as categoryId")->selectRaw("20000 as punkt")->inRandomOrder()->first();
     }
     public static function selectWordId(int $id) {
         return self::join("categories","categories.id","words.categoryId")->select(DB::raw("words.name as name"))->selectRaw("words.categoryId as categoryId")->selectRaw("categories.punkt as punkt")->where("words.categoryId",$id)->inRandomOrder()->first();
