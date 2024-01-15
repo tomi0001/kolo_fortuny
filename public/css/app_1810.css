@@ -21,11 +21,13 @@
     
 }
 .page-at {
-    width: 92%;
+    margin-top: 30px;
+    width: 1700px;
     margin-left: auto;
     margin-right: auto;
     height: 800px;
-    Word-wrap:no-wrap;
+   
+    border-radius: 40px;
 }
 #menu {
      margin-left: auto;

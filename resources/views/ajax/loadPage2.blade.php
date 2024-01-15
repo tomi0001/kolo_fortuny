@@ -164,7 +164,7 @@
         //setPunkt(,true);   
     //}
     $(document).ready(function () {
-        $(".page").toggleClass("page page-at");
+        $("#page").toggleClass("page page-at");
         
    
         

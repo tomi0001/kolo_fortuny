@@ -23,8 +23,10 @@
     width: 92%;
     margin-left: auto;
     margin-right: auto;
-    height: 400px;
-    Word-wrap:no-wrap;
+
+    border-radius: 40px;
+    margin-top: 30px;
+    
 }
 #menu {
      margin-left: auto;
