@@ -68,10 +68,23 @@
         $("#word").html(string2).fadeIn(4000);
     }
     function checkWord(word) {
+        //word2 = word.toString().replace(/(\r\n|\n |\r)/gm, "");
+        //words3 = words.toString().replace(/(\r\n|\n |\r)/gm, "");
+        
+        //word2 = words.toArray();
+        //words3 = words.toArray();
+        //alert(word2.toString());
         if (word.length != words.length) {
             return false;
         }
+        
         for (i=0;i < word.length;i++) {
+            //if ()
+            //alert('sdfsf');
+//            if (word[i] == " " || word[i] == "\n" || word[i] == "\t" || word[i] == "." || word[i] == "," || 
+//            words[i] == " " || words[i] == "\n" || words[i] == "\t" || words[i] == "." || words[i] == ","  ) {
+//                continue;
+//            }
             if (word[i].toUpperCase() != words[i]) {
                 return false;
             }
@@ -137,6 +150,12 @@
         $("#winner").addClass("winner");
         $("#winner").html("Koniec gry wygrałeś <br>" + punkts + " ptk <br> <a  class='new-game' href='javascript:location.reload()'><div class='new-game'>Nowa gra</div></a>");
     }
+    function gameEndQestions() {
+                var bool2 = confirm("Czy na pewno zrezygnowac z gry");
+                if (bool2 == true) {
+                     gameEndWinner();
+                }
+    }
     showHideWord('{{$wordl->name}}');
     //if ('{{$bool}}' == "false") {
     setPunkt(1000,'{{$wordl->punkt}}','{{$bool}}');   
@@ -146,14 +165,7 @@
     //}
     $(document).ready(function () {
         
-       $(document).on("click", function(e){
-            if($(e.target).is(".button-five")){
-                var bool = confirm("Czy na pewno zrezygnowac z gry");
-                if (bool == true) {
-                     gameEndWinner();
-                }
-            }
-        });
+   
         
         $(document).on("click", function(e){
             if($(e.target).is(".button-one")){
@@ -257,7 +269,7 @@
             
         <button class="button-bye button-three">ZGADUJE HASŁO</button>
             
-        <button class="button-bye button-five">ZREZYGNUJ Z GRY</button>
+        <button class="button-bye button-five" onclick="gameEndQestions()">ZREZYGNUJ Z GRY</button>
          
     </div>
     

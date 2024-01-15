@@ -24,8 +24,8 @@ class Word {
             $word = wordModels::selectWord();
         }
         else {
-            $category = wordModels::selectNameCategory($id);
-            $word = wordModels::selectWordId($category->category);
+            $category = categorieModels::selectNameCategory($id);
+            $word = wordModels::selectWordId($id);
         }
         
         return $word;

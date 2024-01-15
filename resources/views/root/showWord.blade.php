@@ -14,6 +14,9 @@
                <td  style='width: 50%;'>
                    <a href='{{ route('admin.showWord')}}/words.name'>nazwa</a>
                </td>
+               <td>
+                   <a href='{{ route('admin.showWord')}}/categories.name'>nazwa kategorii</a>
+               </td>
                <td  style='width: 30%; '>
                    <a href='{{ route('admin.showWord')}}/categories.punkt'>punkty</a>
                </td>
@@ -29,6 +32,9 @@
                </td>
                <td class="name_{{$list->id}}">
                    {{$list->name}}
+               </td>
+               <td>
+                   {{$list->categories}}
                </td>
                <td  class="punkt_{{$list->id}}">
                    {{$list->punkt}}

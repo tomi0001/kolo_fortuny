@@ -23,7 +23,8 @@ class Word extends Model
         $word->save();
     }
     public static function showAllWord(string|null $type) {
-        return self::join("categories","categories.id","words.categoryId")->selectRaw("words.name as name")->selectRaw("categories.punkt as punkt")->selectRaw("words.id as id")->orderBy("$type","DESC")->paginate(30);
+        return self::join("categories","categories.id","words.categoryId")->selectRaw("words.name as name")->selectRaw("categories.name as categories")
+                ->selectRaw("categories.punkt as punkt")->selectRaw("words.id as id")->orderBy("$type","DESC")->paginate(30);
     }
     public function updateWord(Request $request) {
         return self::where("id",$request->get("id"))->update(["name" => $request->get("name")]);

@@ -3,46 +3,57 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/var/www/html/kolo_fortuny/resources/views/root/main.blade.php</file>
-            <file>file:/var/www/html/kolo_fortuny/resources/views/main/main.blade.php</file>
-            <file>file:/var/www/html/kolo_fortuny/resources/views/ajax/loadPage2.blade.php</file>
-            <file>file:/var/www/html/kolo_fortuny/app/Http/Controllers/MainController.php</file>
-            <file>file:/var/www/html/kolo_fortuny/database/migrations/2014_10_12_100000_create_password_resets_table.php</file>
             <file>file:/var/www/html/kolo_fortuny/routes/web.php</file>
-            <file>file:/var/www/html/kolo_fortuny/database/migrations/2021_10_12_000000_create_statistic_table.php</file>
-            <file>file:/var/www/html/kolo_fortuny/app/Http/Services/Statistic.php</file>
-            <file>file:/var/www/html/kolo_fortuny/public/css/app_color.css</file>
-            <file>file:/var/www/html/kolo_fortuny/public/js/bootstrap.js</file>
             <file>file:/var/www/html/kolo_fortuny/database/migrations/2014_10_12_000000_create_users_table.php</file>
-            <file>file:/var/www/html/kolo_fortuny/resources/views/include/url.blade.php</file>
-            <file>file:/var/www/html/kolo_fortuny/database/migrations/2019_12_14_000001_create_personal_access_tokens_table.php</file>
             <file>file:/var/www/html/kolo_fortuny/public/css/app.css</file>
             <file>file:/var/www/html/kolo_fortuny/app/Http/Services/Word.php</file>
             <file>file:/var/www/html/kolo_fortuny/public/css/app_1810.css</file>
             <file>file:/var/www/html/kolo_fortuny/app/Models/Word.php</file>
             <file>file:/var/www/html/kolo_fortuny/app/Http/Services/Root.php</file>
-            <file>file:/var/www/html/kolo_fortuny/app/Http/Controllers/AdminController.php</file>
             <file>file:/var/www/html/kolo_fortuny/public/css/app_700.css</file>
-            <file>file:/var/www/html/kolo_fortuny/database/migrations/2019_08_19_000000_create_failed_jobs_table.php</file>
+            <file>file:/var/www/html/kolo_fortuny/resources/views/root/showCategories.blade.php</file>
             <file>file:/var/www/html/kolo_fortuny/resources/views/main/index.blade.php</file>
+            <file>file:/var/www/html/kolo_fortuny/resources/views/ajax/updateCategory.blade.php</file>
             <file>file:/var/www/html/kolo_fortuny/resources/views/main/menu.blade.php</file>
-            <file>file:/var/www/html/kolo_fortuny/resources/views/include/include.blade.php</file>
-            <file>file:/var/www/html/kolo_fortuny/.env</file>
-            <file>file:/var/www/html/kolo_fortuny/public/.htaccess</file>
+            <file>file:/var/www/html/kolo_fortuny/app/Models/Categorie.php</file>
+            <file>file:/var/www/html/kolo_fortuny/resources/views/root/menu.blade.php</file>
             <file>file:/var/www/html/kolo_fortuny/resources/views/layouts/app.blade.php</file>
-            <file>file:/var/www/html/kolo_fortuny/resources/views/root/addTitle.blade.php</file>
+            <file>file:/var/www/html/kolo_fortuny/database/migrations/2020_10_11_000000_create_categories_table.php</file>
             <file>file:/var/www/html/kolo_fortuny/app/Models/Statistic.php</file>
-            <file>file:/var/www/html/kolo_fortuny/public/js/app.js</file>
             <file>file:/var/www/html/kolo_fortuny/resources/views/ajax/indexNextGame.blade.php</file>
             <file>file:/var/www/html/kolo_fortuny/database/migrations/2020_10_12_000000_create_words_table.php</file>
             <file>file:/var/www/html/kolo_fortuny/public/css/app_1210.css</file>
-            <file>file:/var/www/html/kolo_fortuny/public/css/app_1410.css</file>
             <file>file:/var/www/html/kolo_fortuny/public/css/app_360.css</file>
-            <file>file:/var/www/html/kolo_fortuny/database/seeders/DatabaseSeeder.php</file>
             <file>file:/var/www/html/kolo_fortuny/config/app.php</file>
+            <file>file:/var/www/html/kolo_fortuny/resources/views/root/main.blade.php</file>
+            <file>file:/var/www/html/kolo_fortuny/resources/views/main/main.blade.php</file>
+            <file>file:/var/www/html/kolo_fortuny/resources/views/ajax/loadPage2.blade.php</file>
+            <file>file:/var/www/html/kolo_fortuny/app/Http/Controllers/MainController.php</file>
+            <file>file:/var/www/html/kolo_fortuny/database/migrations/2014_10_12_100000_create_password_resets_table.php</file>
+            <file>file:/var/www/html/kolo_fortuny/resources/views/root/changePassword.blade.php</file>
+            <file>file:/var/www/html/kolo_fortuny/database/migrations/2021_10_12_000000_create_statistic_table.php</file>
+            <file>file:/var/www/html/kolo_fortuny/resources/views/root/showWord.blade.php</file>
+            <file>file:/var/www/html/kolo_fortuny/app/Models/User.php</file>
+            <file>file:/var/www/html/kolo_fortuny/app/Http/Services/Statistic.php</file>
+            <file>file:/var/www/html/kolo_fortuny/public/css/app_color.css</file>
+            <file>file:/var/www/html/kolo_fortuny/public/js/bootstrap.js</file>
+            <file>file:/var/www/html/kolo_fortuny/resources/views/include/url.blade.php</file>
+            <file>file:/var/www/html/kolo_fortuny/database/migrations/2019_12_14_000001_create_personal_access_tokens_table.php</file>
+            <file>file:/var/www/html/kolo_fortuny/app/Http/Controllers/AdminController.php</file>
+            <file>file:/var/www/html/kolo_fortuny/database/migrations/2019_08_19_000000_create_failed_jobs_table.php</file>
+            <file>file:/var/www/html/kolo_fortuny/resources/views/ajax/updateWord.blade.php</file>
+            <file>file:/var/www/html/kolo_fortuny/resources/views/ajax/succes.blade.php</file>
+            <file>file:/var/www/html/kolo_fortuny/resources/views/include/include.blade.php</file>
+            <file>file:/var/www/html/kolo_fortuny/.env</file>
+            <file>file:/var/www/html/kolo_fortuny/public/.htaccess</file>
+            <file>file:/var/www/html/kolo_fortuny/resources/views/root/addTitle.blade.php</file>
+            <file>file:/var/www/html/kolo_fortuny/config/view.php</file>
+            <file>file:/var/www/html/kolo_fortuny/public/js/app.js</file>
+            <file>file:/var/www/html/kolo_fortuny/resources/views/ajax/error.blade.php</file>
+            <file>file:/var/www/html/kolo_fortuny/public/css/app_1410.css</file>
+            <file>file:/var/www/html/kolo_fortuny/database/seeders/DatabaseSeeder.php</file>
             <file>file:/var/www/html/kolo_fortuny/database/migrations/2014_10_12_100000_create_password_reset_tokens_table.php</file>
             <file>file:/var/www/html/kolo_fortuny/resources/views/root/loadStatistic.blade.php</file>
-            <file>file:/var/www/html/kolo_fortuny/storage/framework/views/389ef32f74359b4389a845870c73aeae.php</file>
         </group>
     </open-files>
 </project-private>
