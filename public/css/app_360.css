@@ -414,5 +414,6 @@ div.down {
 div.word3 {
   height: 700px;
  position: Fixed;
+ top: 70px;
 }
 }
