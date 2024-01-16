@@ -70,7 +70,7 @@
     function checkWord(word) {
         //word2 = word.toString().replace(/(\r\n|\n |\r)/gm, "");
         //words3 = words.toString().replace(/(\r\n|\n |\r)/gm, "");
-        const regexp = /[^\wąćęłńóżź]/ig;
+        const regexp = /[^a-z0-9ąęóćśńźłż]/ig;
         word2 = word.replaceAll(regexp, '');
         words3 = words.toString().replaceAll(regexp, '');
         //word2 = words.toArray();
