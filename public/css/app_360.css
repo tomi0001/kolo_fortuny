@@ -6,14 +6,15 @@
     width: 92%;
     margin-left: auto;
     margin-right: auto;
-    min-height: 1000px;
+    min-height: 100px;
     Word-wrap:no-wrap;
+    
     
 }
 .page {
     margin-top: 30px;
     width: 350px;
-    min-height: 1000px;
+    min-height: 750px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 40px;
@@ -23,7 +24,7 @@
     width: 92%;
     margin-left: auto;
     margin-right: auto;
-    min-height: 1900px;
+    min-height: 800px;
     margin-top: 30px;
     border-radius: 40px;
 }
@@ -398,5 +399,20 @@ div.gameOver {
     right: 2%;
     text-align: center;
     font-size: 60px;
+}
+div.down {
+
+    width: 100%;
+    height: 400px;
+
+    margin-left: auto;
+    margin-right: auto;
+    position:absolute;
+    bottom: 0;
+
+}
+div.word3 {
+  height: 700px;
+ position: Fixed;
 }
 }

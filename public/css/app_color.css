@@ -280,10 +280,7 @@ div.category {
     font-weight: bold;
 }
 
-div.down {
 
-    background-color: rgba(108, 65, 129, 0.65);
-}
 span.punkt {
     font-weight: bold;
     color: #613167;
@@ -599,4 +596,7 @@ a.links {
 div.category-title {
     color: #591D5E;
     font-weight: bold;
+}
+div.word3 {
+    
 }

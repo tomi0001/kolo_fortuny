@@ -404,4 +404,8 @@ div.gameOver {
     text-align: center;
     font-size: 60px;
 }
+div.word3 {
+  height: 700px;
+ position: Fixed;
+}
 }
