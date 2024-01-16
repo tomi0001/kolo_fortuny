@@ -70,22 +70,24 @@
     function checkWord(word) {
         //word2 = word.toString().replace(/(\r\n|\n |\r)/gm, "");
         //words3 = words.toString().replace(/(\r\n|\n |\r)/gm, "");
-        
+        const regexp = /[^\wąćęłńóżź]/ig;
+        word2 = word.replaceAll(regexp, '');
+        words3 = words.toString().replaceAll(regexp, '');
         //word2 = words.toArray();
         //words3 = words.toArray();
         //alert(word2.toString());
-        if (word.length != words.length) {
+        if (word2.length != words3.length) {
             return false;
         }
         
-        for (i=0;i < word.length;i++) {
+        for (i=0;i < word2.length;i++) {
             //if ()
             //alert('sdfsf');
 //            if (word[i] == " " || word[i] == "\n" || word[i] == "\t" || word[i] == "." || word[i] == "," || 
 //            words[i] == " " || words[i] == "\n" || words[i] == "\t" || words[i] == "." || words[i] == ","  ) {
 //                continue;
 //            }
-            if (word[i].toUpperCase() != words[i]) {
+            if (word2[i].toUpperCase() != words3[i]) {
                 return false;
             }
         }
