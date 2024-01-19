@@ -13,17 +13,16 @@
 }
 .page {
     margin-top: 30px;
-    width: 350px;
-    min-height: 750px;
+    width: 290px;
+    min-height: 850px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 40px;
     
 }
 .page-at {
-    width: 92%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 290px;
+    margin-left: 10px;
     min-height: 800px;
     margin-top: 30px;
     border-radius: 40px;
@@ -222,23 +221,27 @@ div.space {
 div.punkt {
     padding-top: 17px;
     float: left;
-    width: 80%;
+    width: 100%;
     clear: both;
+    text-align: center;
 
 }
 div.button-div {
   display: flex;
   flex-wrap: wrap;
+  top: 10px;
   gap: 16px;
-  width: 280px;
+  right: 70px;
+  width: 60px;
+  position: fixed;
   padding-left: 40px;
 }
 
 button.button-bye {
-  flex: 1 0 110px;
-  padding: 5px 5px;
+  flex: 1 0 80px;
+  
   min-height: 80px;
-  max-width: 120px; 
+  width: 80px; 
 }
 button.button-one {
    
@@ -264,12 +267,15 @@ button.button-two {
 }
 
 button.button-four {
-	font-size: 12px;
+	font-size: 11px;
 	font-weight:bold;
 	
         
 }
-
+    span.punkt {
+      font-weight: bold;
+    color: white;
+}
 button.button-five {
       font-size: 12px;
 	font-weight:bold;
@@ -402,18 +408,21 @@ div.gameOver {
 }
 div.down {
 
-    width: 100%;
-    height: 400px;
-
+    width: 250px;
+    height: 150px;
+    position: fixed;
     margin-left: auto;
     margin-right: auto;
-    position:absolute;
-    bottom: 0;
+    top: 5px;
+    left: 10px;
+    background-color: rgba(84, 29, 94, 0.75);
+    border-radius: 30px;
+    
 
 }
 div.word3 {
   height: 700px;
- position: Fixed;
+
  top: 70px;
 }
 }

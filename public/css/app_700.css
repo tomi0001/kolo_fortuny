@@ -12,7 +12,7 @@
 }
 .page {
     margin-top: 30px;
-    width: 890px;
+    width: 610px;
     min-height: 1000px;
     margin-left: auto;
     margin-right: auto;
@@ -20,9 +20,8 @@
     
 }
 .page-at {
-    width: 92%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 610px;
+    margin-left: 20px;
     min-height: 600px;
     border-radius: 40px;
     margin-top: 30px;
@@ -268,38 +267,50 @@ div.space {
 }
 div.down {
 
-    width: 100%;
-    height: 200px;
-
+    width: 320px;
+    height: 100px;
+    position: fixed;
     margin-left: auto;
     margin-right: auto;
+    top: 5px;
+    left: 20px;
+    background-color: rgba(84, 29, 94, 0.75);
+    border-radius: 30px;
+
 
 }
 div.punkt {
     padding-top: 17px;
     float: left;
-    width: 31%;
+    width: 100%;
+    text-align: center;
+
+}
+span.punkt {
+
+    font-weight: bold;
+    color: white;
 
 }
 div.button-div {
-    width: 65%;
-
+    width: 60px;
+    position: fixed;
     float: left;
     padding-top: 10px;
-    
-
+    top: 2px;
+    right: 80px;
 }
 button.button-bye {
     margin-left: 4px;
-    width: 150px;
-    margin: 8px;
-    height: 70px;
+    width: 120px;
+    margin: 4px;
+    height: 60px;
     
     
 }
 button.button-one {
    
-	font-size:13px;
+	font-size:12px;
 	font-weight:bold;
 	padding:8px 5px;
 	
@@ -313,7 +324,7 @@ button.button-disable {
 
 
 button.button-two {
-	font-size:13px;
+	font-size:12px;
 	font-weight:bold;
 	padding:8px 5px;
 }
@@ -325,13 +336,13 @@ button.button-four {
 }
 
 button.button-five {
-        font-size:13px;
+        font-size:12px;
 	font-weight:bold;
 	padding:8px 5px;
 }
 
 button.button-three {
-	font-size:13px;
+	font-size:12px;
 	font-weight:bold;
 	padding:8px 5px;
 }
@@ -406,6 +417,6 @@ div.gameOver {
 }
 div.word3 {
   height: 700px;
- position: Fixed;
+
 }
 }
