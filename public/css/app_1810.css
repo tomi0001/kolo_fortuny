@@ -254,8 +254,8 @@ div.space {
 
 
 #char-one {
-    width: 900px;
-    height: 130px;
+    width: 680px;
+    height: 180px;
     position: fixed;
     bottom: 150px;
     right: 500px;
@@ -271,12 +271,21 @@ div.space {
     
     
 }
+div.char-type {
+   float: left;
+   width: 50px;
+   height: 50px;
+   font-size: 32px;
+   margin: 2px;
+   text-align: center;
+   
+}
 #char-two {
-    width: 600px;
-    height: 79px;
+    width: 680px;
+    height: 180px;
     position: fixed;
     bottom: 150px;
-    right: 400px;
+    right: 500px;
 }
 
 #char-three {
@@ -449,5 +458,9 @@ div.down {
     font-weight: bold;
     color: #613167;
 }
-        
+div.half-div {
+    width: 22px;
+    height: 50px;
+    float: left;
+}        
 }

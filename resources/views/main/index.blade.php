@@ -31,7 +31,7 @@
                         @else
                             <div class="button-selectCategory space button-selectCategory-{{rand(2,10)}} " onclick="loadNewGame('page2',{{$cat->id}})"><span class="font-large" id="iteration_{{$cat->id}}">{{$cat->category}} + {{$cat->punkt}} ptk</span></div>
                         @endif
-
+                       
 
                     </div>
                     @endforeach

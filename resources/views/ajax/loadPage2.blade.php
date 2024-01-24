@@ -124,8 +124,10 @@
         $("#word").html(string2).fadeIn(4000);
     }
     function winner() {
+        
         var winner = 0;
         $("#winner").fadeIn(1000);
+        
         $("#winner").addClass("winner");
         for (i=punktsWinnerArray.length;i >= 0;i--) {
             if (parseInt(punkts) + parseInt(punktsAt) >= punktsWinnerArray[i]) {
@@ -230,6 +232,7 @@
            if (isEnd()) {
                winner();
                setTimeout(loadPageNext,3000);
+               
            }
         });
         
@@ -239,6 +242,7 @@
                 selectWord();
                 winner();
                 setTimeout(loadPageNext,3000);
+                
             }
             else {
                  selectWord();
@@ -293,11 +297,23 @@
 
 </div>
 <div id="char-one">
+    <div class="char-on char-type char-blue">Q</div>
     <div class="char-on char-type char-blue">W</div>
+    <div class="char-on char-type char-off char-color-off">E</div>
+    <div class="char-on char-type char-off char-color-off">Ę</div>
     <div class="char-on char-type char-blue">R</div>
     <div class="char-on char-type char-blue">T</div>
+    <div class="char-on char-type char-off char-color-off">Y</div>
+    <div class="char-on char-type char-off char-color-off">U</div>
+    <div class="char-on char-type char-off char-color-off">I</div>
+    <div class="char-on char-type char-off char-color-off">O</div>
+    <div class="char-on char-type char-off char-color-off">Ó</div>
     <div class="char-on char-type char-blue">P</div>
+    <div class="break"></div>
+    <div class="char-on char-type char-off char-color-off">A</div>
+    <div class="char-on char-type char-off char-color-off">Ą</div>
     <div class="char-on char-type char-blue">S</div>
+    <div class="char-on char-type char-blue">Ś</div>
     <div class="char-on char-type char-blue">D</div>
     <div class="char-on char-type char-blue">F</div>
     <div class="char-on char-type char-blue">G</div>
@@ -306,31 +322,60 @@
     <div class="char-on char-type char-blue">K</div>
     <div class="char-on char-type char-blue">L</div>
     <div class="char-on char-type char-blue">Ł</div>
+    <div class="break"></div>
+    <div class="half-div"></div>
     <div class="char-on char-type char-blue">Z</div>
+    <div class="char-on char-type char-blue">Ż</div>
+    <div class="char-on char-type char-blue">Ź</div>
     <div class="char-on char-type char-blue">X</div>
     <div class="char-on char-type char-blue">C</div>
+    <div class="char-on char-type char-blue">Ć</div>
     <div class="char-on char-type char-blue">V</div>
     <div class="char-on char-type char-blue">B</div>
     <div class="char-on char-type char-blue">N</div>
-    <div class="char-on char-type char-blue">M</div>
-    <div class="char-on char-type char-blue">Ś</div>
     <div class="char-on char-type char-blue">Ń</div>
-    <div class="char-on char-type char-blue">Ż</div>
-    <div class="char-on char-type char-blue">Ź</div>
-    <div class="char-on char-type char-blue">Ć</div>
+    <div class="char-on char-type char-blue">M</div>
 </div>
 
 <div id="char-two">
-    <div class="char-on char-type char-green">Q</div>
+    <div class="char-on char-type char-off char-color-off">Q</div>
+    <div class="char-on char-type char-off char-color-off">W</div>
     <div class="char-on char-type char-green">E</div>
+    <div class="char-on char-type char-green">Ę</div>
+    <div class="char-on char-type char-off char-color-off">R</div>
+    <div class="char-on char-type char-off char-color-off">T</div>
     <div class="char-on char-type char-green">Y</div>
     <div class="char-on char-type char-green">U</div>
     <div class="char-on char-type char-green">I</div>
     <div class="char-on char-type char-green">O</div>
+    <div class="char-on char-type char-green">Ó</div>
+    <div class="char-on char-type char-off char-color-off">P</div>
+    <div class="break"></div>
     <div class="char-on char-type char-green">A</div>
     <div class="char-on char-type char-green">Ą</div>
-    <div class="char-on char-type char-green">Ę</div>
-    <div class="char-on char-type char-green">Ó</div>
+    <div class="char-on char-type char-off char-color-off">S</div>
+    <div class="char-on char-type char-off char-color-off">Ś</div>
+    <div class="char-on char-type char-off char-color-off">D</div>
+    <div class="char-on char-type char-off char-color-off">F</div>
+    <div class="char-on char-type char-off char-color-off">G</div>
+    <div class="char-on char-type char-off char-color-off">H</div>
+    <div class="char-on char-type char-off char-color-off">J</div>
+    <div class="char-on char-type char-off char-color-off">K</div>
+    <div class="char-on char-type char-off char-color-off">L</div>
+    <div class="char-on char-type char-off char-color-off">Ł</div>
+    <div class="break"></div>
+    <div class="half-div"></div>
+    <div class="char-on char-type char-off char-color-off">Z</div>
+    <div class="char-on char-type char-off char-color-off">Ż</div>
+    <div class="char-on char-type char-off char-color-off">Ź</div>
+    <div class="char-on char-type char-off char-color-off">X</div>
+    <div class="char-on char-type char-off char-color-off">C</div>
+    <div class="char-on char-type char-off char-color-off">Ć</div>
+    <div class="char-on char-type char-off char-color-off">V</div>
+    <div class="char-on char-type char-off char-color-off">B</div>
+    <div class="char-on char-type char-off char-color-off">N</div>
+    <div class="char-on char-type char-off char-color-off">Ń</div>
+    <div class="char-on char-type char-off char-color-off">M</div>
 
 
 </div>

@@ -12,7 +12,7 @@
 }
 .page {
     margin-top: 30px;
-    width: 610px;
+    width: 810px;
     min-height: 1000px;
     margin-left: auto;
     margin-right: auto;
@@ -20,7 +20,7 @@
     
 }
 .page-at {
-    width: 610px;
+    width: 810px;
     margin-left: 20px;
     min-height: 600px;
     border-radius: 40px;
@@ -39,7 +39,7 @@
 div.button {
     padding-top: 80px;
     
-    width: 600px;
+    width: 800px;
 
     text-align: center;
     margin-left: auto;
@@ -54,9 +54,9 @@ div.button {
         overflow: auto;
         overflow-x: hidden;
         overflow-y: auto;
-        margin-bottom: 10px;
+        margin-bottom: 1px;
         color: green;
-        width: 600px
+        width: 800px
       }
       
       .scroll-y::-webkit-scrollbar {
@@ -168,7 +168,7 @@ button.button-newGame {
     font-weight: bold;
 }
 div.button-selectCategory {
-    width: 250px;
+    width: 210px;
     height: 65px;
     border-radius: 25px;
     font-size: 20px;
@@ -353,15 +353,30 @@ button.button-word-three {
         font-weight: bold;
 	
 }
-
+div.char-type {
+   float: left;
+   width: 40px;
+   height: 40px;
+   font-size: 25px;
+   margin: 2px;
+   text-align: center;
+   
+}
 #char-one {
-    width: 700px;
-    height: 210px;
+    width: 550px;
+    height: 180px;
     position: fixed;
-    bottom: 190px;
-    right: 100px;
+    bottom: 150px;
+    left: 10px;
     
     
+}
+#char-two {
+    width: 550px;
+    height: 180px;
+    position: fixed;
+    bottom: 150px;
+    left: 10px;
 }
 #char-four {
     width: 600px;
@@ -372,13 +387,7 @@ button.button-word-three {
     
     
 }
-#char-two {
-    width: 600px;
-    height: 120px;
-    position: fixed;
-    bottom: 190px;
-    right: 100px;
-}
+
 
 #char-three {
     width: 700px;

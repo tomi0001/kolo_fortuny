@@ -20,6 +20,15 @@
     border-radius: 40px;
     
 }
+div.char-type {
+   float: left;
+   width: 40px;
+   height: 40px;
+   font-size: 25px;
+   margin: 2px;
+   text-align: center;
+   
+}
 .page-at {
     width: 290px;
     margin-left: 10px;
@@ -298,7 +307,7 @@ button.button-word-three {
 
 #char-one {
     width: 300px;
-    height: 410px;
+    height: 310px;
     position: fixed;
     bottom: 120px;
     right: 50px;
@@ -316,7 +325,7 @@ button.button-word-three {
 }
 #char-two {
     width: 300px;
-    height: 120px;
+    height: 310px;
     position: fixed;
     bottom: 120px;
     right: 50px;
