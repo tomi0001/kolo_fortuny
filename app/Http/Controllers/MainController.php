@@ -23,7 +23,7 @@ class MainController extends BaseController
         $Statistic->saveStatistic($request,"Hasło nr 1");
         $Word = new Word;
         $wordl = $Word->selectWordl($request->get("id"));
-        //print $request->get("id");
+
         return View("ajax.loadPage2")->with("wordl",$wordl)->with("bool",$request->get("bool"))
                 ->with("punktsAt",0)->with("allCategories",$request->get("allCategories"))->with("nameCategory",$Word->nameCategory);
     }
@@ -33,5 +33,15 @@ class MainController extends BaseController
         $Word = new Word;
         $category = $Word->selectCategory();
         return View("ajax.indexNextGame")->with("category",$category)->with("punktsAt",$request->get("punkts"))->with("bool",$request->get("bool"));
+    }
+    public function aboutAutor(Request $request) {
+        $Statistic = new Statistic;
+        $Statistic->saveStatistic($request,"Infomracje o autorze");
+        return View("main.aboutAutor");
+    }
+    public function loadDescriptionGame(Request $request) {
+        $Statistic = new Statistic;
+        $Statistic->saveStatistic($request,"zasady gry");
+        return View("main.loadDescriptionGame");
     }
 }

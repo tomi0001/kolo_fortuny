@@ -24,7 +24,6 @@
         .fail(function() {
             $("#page2").html( "<div class='ajaxError'>Wystąpił błąd</div>" );
         })
-        //$("#page").html($("#page2").html()).animate();
     }
     
     function searchWord(char,punkt) {
@@ -49,44 +48,31 @@
         string2 += "</div>";
         punkt = parseInt(punkt);
         punkts = punkts -  punkt;
-        if (punkts < 150) {
+        if (punkts < 80) {
             $(".button-two").attr("disabled",true);
             $(".button-two").removeClass("button-two").addClass("button-disable");
-            //$(".button-two");
         }
-        if (punkts < 80) {
+        if (punkts < 35) {
             $(".button-one").attr("disabled",true);
             $(".button-one").removeClass("button-one").addClass("button-disable");
-            //$(".button-one");
         }
-        if (punkts < 50) {
+        if (punkts < 25) {
             $(".button-four").attr("disabled",true);
             $(".button-four").removeClass("button-four").addClass("button-disable");
-            //$(".button-one");
         }
         $("#punkt").text(punkts);
         $("#word").html(string2).fadeIn(4000);
     }
     function checkWord(word) {
-        //word2 = word.toString().replace(/(\r\n|\n |\r)/gm, "");
-        //words3 = words.toString().replace(/(\r\n|\n |\r)/gm, "");
         const regexp = /[^a-z0-9ąęóćśńźłż]/ig;
         word2 = word.replaceAll(regexp, '');
         words3 = words.toString().replaceAll(regexp, '');
-        //word2 = words.toArray();
-        //words3 = words.toArray();
-        //alert(word2.toString());
         if (word2.length != words3.length) {
             return false;
         }
         
         for (i=0;i < word2.length;i++) {
-            //if ()
-            //alert('sdfsf');
-//            if (word[i] == " " || word[i] == "\n" || word[i] == "\t" || word[i] == "." || word[i] == "," || 
-//            words[i] == " " || words[i] == "\n" || words[i] == "\t" || words[i] == "." || words[i] == ","  ) {
-//                continue;
-//            }
+
             if (word2[i].toUpperCase() != words3[i]) {
                 return false;
             }
@@ -117,10 +103,7 @@
                 words2[i] = true;
             } 
         }
-        //punkt = parseInt(punkt);
-        //punkts = punkts -  punkt;
         string2 += "</div>";
-        //$("#punkt").text(punkts);
         $("#word").html(string2).fadeIn(4000);
     }
     function winner() {
@@ -132,11 +115,9 @@
         for (i=punktsWinnerArray.length;i >= 0;i--) {
             if (parseInt(punkts) + parseInt(punktsAt) >= punktsWinnerArray[i]) {
                 punktsWinner =  punktsWinnerArray[i];
-                //alert(punktsWinner);
                 break;
             }
         }
-        //alert(punktsAt);
         punktSum = parseInt(punkts) + parseInt(punktsAt);
         punkts = punktSum;
         $("#winner").html("Wygrałeś " + punktSum + " ptk gwarantowane " + punktsWinner + " ptk");
@@ -161,12 +142,9 @@
                 }
     }
     showHideWord('{{$wordl->name}}');
-    //if ('{{$bool}}' == "false") {
+
     setPunkt(1000,'{{$wordl->punkt}}','{{$bool}}');   
-    //}
-    //else {
-        //setPunkt(,true);   
-    //}
+
     $(document).ready(function () {
         $("#page").toggleClass("page page-at");
         
@@ -214,13 +192,13 @@
 
         $(".char-on").click(function() {
            if ($(this).hasClass("char-blue")) {
-               searchWord($(this).text(),80);
+               searchWord($(this).text(),35);
            }
            else if($(this).hasClass("char-yellow")) {
-               searchWord($(this).text(),50);
+               searchWord($(this).text(),25);
            }
            else if ($(this).hasClass("char-green")){
-               searchWord($(this).text(),150);
+               searchWord($(this).text(),80);
            }
            
            $(this).addClass("char-off");
@@ -269,11 +247,11 @@
     </div>
     <div class="button-div">
         
-        <button class="button-bye button-four">KUPUJE CYFRĘ -50 ptk</button>
+        <button class="button-bye button-four">KUPUJE CYFRĘ -25 ptk</button>
 
-        <button class="button-bye button-one">KUPUJE SPÓŁGŁOSKĘ -80 ptk</button>
+        <button class="button-bye button-one">KUPUJE SPÓŁGŁOSKĘ -35 ptk</button>
             
-        <button class="button-bye button-two">KUPUJE SAMOGŁOSKĘ -150 ptk</button>
+        <button class="button-bye button-two">KUPUJE SAMOGŁOSKĘ -80 ptk</button>
             
         <button class="button-bye button-three">ZGADUJE HASŁO</button>
             

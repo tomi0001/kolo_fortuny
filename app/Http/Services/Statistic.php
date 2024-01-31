@@ -14,13 +14,7 @@ class Statistic {
         $statis->saveStatistic($title,$request->server('REMOTE_ADDR'),$request->server('HTTP_USER_AGENT'),$request->server('HTTP_REFERER'));
         
     }
-        /*
-     *  <option value="http_user_agent">http user agent</option>
-                <option value="http referer">http referer</option>
-                <option value="ip">ip</option>
-                <option value="what_work">co robił</option>
-                <option value="date">data</option>
-     */
+
     public function loadStatistic(string $type,Request $request) {
         switch($request->get("searchType")) {
             case 'http_user_agent':

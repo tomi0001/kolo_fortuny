@@ -19,6 +19,28 @@
     border-radius: 40px;
     
     
+    
+}
+.page-autor {
+    margin-top: 30px;
+    padding-top: 300px;
+    text-align: center;
+    width: 1700px;
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 40px;
+    
+}
+.page-desciption {
+    margin-top: 30px;
+    padding-top: 100px;
+    text-align: center;
+    width: 1700px;
+    height: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 40px;
 }
 .page-at {
     margin-top: 30px;
@@ -43,7 +65,7 @@ div.button {
     margin-left: auto;
     margin-right: auto;
     width: 89%;
-
+    margin-bottom: 30px;
     text-align: center;
    
     
@@ -66,7 +88,7 @@ div.down {
 
 }
 #newGame {
-    padding-top: 300px;
+    padding-top: 80px;
 }
 div.page3 {
     width: 1200px;
@@ -189,6 +211,20 @@ div.title {
 }
 
 button.button-newGame {
+    width: 800px;
+    height: 200px;
+    border-radius: 25px;
+    font-size: 45px;
+    font-weight: bold;
+}
+button.button-descriptiongame {
+    width: 800px;
+    height: 200px;
+    border-radius: 25px;
+    font-size: 45px;
+    font-weight: bold;
+}
+button.button-aboutautor {
     width: 800px;
     height: 200px;
     border-radius: 25px;
@@ -463,4 +499,30 @@ div.half-div {
     height: 50px;
     float: left;
 }        
+span.mail {
+    font-size: 45px;
+    text-decoration: underline;
+}
+span.autor {
+    font-size: 50px;
+}
+div.link-menu-main {
+    margin-top: 80px;
+    width: 400px;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    height: 100px;
+    
+}
+div.description {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    font-size: 25px;
+}
+span.description {
+    font-size: 35px;
+}
 }

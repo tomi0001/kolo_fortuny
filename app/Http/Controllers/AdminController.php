@@ -61,7 +61,6 @@ class AdminController extends BaseController {
         $Statistic->saveStatistic($request," dodawanie hasła");
         $Word = new Word;
         $Word->checkError($request);
-        //$list = $Word->selectCategory();
         if (count($Word->error) > 0) {
             return View("ajax.error")->with("error",$Word->error);
         }

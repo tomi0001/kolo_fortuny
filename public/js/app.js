@@ -13,7 +13,7 @@ var punktsWinnerArray = [
   250000
 ];
 function setPunkt(punkt,punktsAt2,bool) {
-    //alert(bool);
+
     if (bool == "false") {
         punkts = punkt;
         punktsAt = parseInt(punktsAt2);
@@ -22,8 +22,6 @@ function setPunkt(punkt,punktsAt2,bool) {
     else {
         punkts = parseInt(punkts);
         punktsAt = parseInt(punktsAt2);
-        //punktsAt = punkts + punktsAt2;
-        //punkts = punktsAt;
         $("#punkt").text(punkts);
     }
 }
@@ -49,7 +47,6 @@ function loadNextGame(page,id) {
 }
 
 function loadPage1(bool = false) {
-    //alert('sdfsdf');
     $("#newGame").css("display","none");
     $("#page").html($("#page1").html()).animate();
 }
@@ -80,7 +77,6 @@ function loadPage2(id,bool = 'false') {
     .fail(function() {
         $("#page2").html( "<div class='ajaxError'>Wystąpił błąd</div>" );
     })
-    //$("#page").html($("#page2").html()).animate();
 }
 
 function showHideWord(word) {
@@ -91,7 +87,6 @@ function showHideWord(word) {
     for(i=0;i < word.length;i++) {
         words[i] = word[i].toUpperCase();
         if (word[i] == " ") {
-            //words2[i] = true;
             string += "</div><div class='empty'>&nbsp;</div><div class='word2'>";
         }
         else {
@@ -129,7 +124,6 @@ function addTitle(url) {
 function updateCategory(id) {
     var name = $("#name_" + id).val();
     var punkt = $("#punkt_" + id).val();
-    //alert(name);
          $.ajax({
         url : urlArray[2],
             method : "get",

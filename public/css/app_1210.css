@@ -19,6 +19,26 @@
     border-radius: 40px;
     
 }
+.page-autor {
+    margin-top: 30px;
+    width: 1000px;
+    height: 800px;
+    padding-top: 300px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 40px;
+}
+.page-desciption {
+    margin-top: 30px;
+    padding-top: 300px;
+    text-align: center;
+    width: 1000px;
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 40px;
+}
 #menu {
      margin-left: auto;
     margin-right: auto;
@@ -209,6 +229,20 @@ button.button-newGame {
     font-size: 25px;
     font-weight: bold;
 }
+button.button-descriptiongame {
+    width: 400px;
+    height: 80px;
+    border-radius: 25px;
+    font-size: 25px;
+    font-weight: bold;
+}
+button.button-aboutautor {
+    width: 400px;
+    height: 80px;
+    border-radius: 25px;
+    font-size: 25px;
+    font-weight: bold;
+}
 div.button-selectCategory {
     
     width: 300px;
@@ -314,5 +348,31 @@ div.char-type {
    margin: 2px;
    text-align: center;
    
+}
+span.mail {
+    font-size: 45px;
+    text-decoration: underline;
+}
+span.autor {
+    font-size: 50px;
+}
+div.link-menu-main {
+    margin-top: 300px;
+    width: 400px;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    height: 100px;
+    
+}
+div.description {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    font-size: 25px;
+}
+span.description {
+    font-size: 35px;
 }
 }

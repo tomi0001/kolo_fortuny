@@ -116,6 +116,19 @@ background-color: #367ED7;
 border-color: blue;
 color: white;
 }
+button.button-descriptiongame {
+
+box-shadow: 0px 0px 18px 6px #2d530e;
+background-color: #659212;
+border-color: #549266;
+color: white;
+}
+button.button-aboutautor {
+    box-shadow: 0px 0px 18px 6px #7E1876;
+background-color: #8b2a92;
+border-color: #712D5F;
+color: white;
+}
 div.button-selectCategory:hover { 
     -webkit-box-shadow: 0px 0px 21px 0px rgba(188, 218, 143, 1);
 -moz-box-shadow: 0px 0px 21px 0px rgba(188, 218, 143, 1);
@@ -596,4 +609,25 @@ div.category-title {
 }
 div.word3 {
     
+}
+
+span.autor {
+    color: #4C1C74;
+}
+span.mail  {
+    color: blue;
+}
+
+div.link-menu-main {
+    color: white;
+    font-size: 33px;
+    
+    background-color: rgba(26, 37, 125, 1);
+    -webkit-box-shadow: 0px 0px 30px -3px rgba(101, 183, 200, 1);
+-moz-box-shadow: 0px 0px 30px -3px rgba(101, 183, 200, 1);
+box-shadow: 0px 0px 30px -3px rgba(101, 183, 200, 1);
+border-radius: 35px;
+}
+div.description {
+    color: #370737;
 }

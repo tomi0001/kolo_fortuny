@@ -17,6 +17,8 @@ Route::get('/',[App\Http\Controllers\MainController::class, 'main'])
                     ->name("main");
 Route::get('/loadPage2', [App\Http\Controllers\MainController::class, 'loadPage2'])->name('loadPage2');
 Route::get('/loadPageNext', [App\Http\Controllers\MainController::class, 'loadPageNext'])->name('loadPageNext');
+Route::get('/loadDescriptionGame', [App\Http\Controllers\MainController::class, 'loadDescriptionGame'])->name('loadDescriptionGame');
+Route::get('/aboutAutor', [App\Http\Controllers\MainController::class, 'aboutAutor'])->name('aboutAutor');
 
 Auth::routes();
 Route::get('/root',[App\Http\Controllers\AdminController::class, 'main'])

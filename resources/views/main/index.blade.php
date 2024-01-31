@@ -7,11 +7,18 @@
         <div class="button" id="newGame">
             <button class="button-newGame" onclick="loadPage1()">ROZPOCZNIJ NOWĄ GRĘ</button>
         </div>
+        
+        <div class="button">
+            <a href="{{route('loadDescriptionGame')}}"><button class="button-descriptiongame">ZASADY GRY</button></a>
+        </div>
+        <div class="button">
+            <a href="{{route('aboutAutor')}}"><button class="button-aboutautor">O AUTORZE</button></a>
+        </div>
     </div>
     <div id='page1' style='display: none;' class="page">
         <div class='center-title'><span class='message'>WYBIERZ KATEGORIĘ</span></div>
         <div class="button">
-            <div class="button-selectCategory space button-selectCategory-1"  onclick="loadNewGame('page2',0)">WSZYSTKIE CATEGORIE + 20000 ptk</div>
+            <div class="button-selectCategory space button-selectCategory-1"  onclick="loadNewGame('page2',0)">WSZYSTKIE CATEGORIE + 2000 ptk</div>
             <div style="float: left; " class="scroll-y ">
              <div class="container">
               <div class="row">
