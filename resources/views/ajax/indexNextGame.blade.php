@@ -4,7 +4,7 @@
 <div id='page1' style='display: block;' class="page">
         <div class='center-title'><span class='message'>WYBIERZ KATEGORIĘ</span></div>
         <div class="button">
-           <div class="button-selectCategory space button-selectCategory-1"  onclick="loadNextGame('page2',0)">WSZYSTKIE CATEGORIE</div>
+           <div class="button-selectCategory space button-selectCategory-1"  onclick="loadNextGame('page2',0)">WSZYSTKIE CATEGORIE + 2000 ptk</div>
             <div style="float: left; " class="scroll-y ">
                 <div class="container">
                     <div class="row">
