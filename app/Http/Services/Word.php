@@ -21,7 +21,8 @@ class Word {
     }
     public function selectWordl(int $id = 0) {
         if ($id == 0) {
-            $word = wordModels::selectWord();
+            $id = categorieModels::selectCategoryRandom();
+            $word = wordModels::selectWordIdAllCategories($id->id);
             $this->nameCategory = null;
         }
         else {

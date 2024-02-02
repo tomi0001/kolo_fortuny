@@ -400,8 +400,8 @@ div.char-type {
     width: 550px;
     height: 180px;
     position: fixed;
-    bottom: 150px;
-    left: 10px;
+    bottom: 100px;
+    left: 70px;
     
     
 }
@@ -409,8 +409,8 @@ div.char-type {
     width: 550px;
     height: 180px;
     position: fixed;
-    bottom: 150px;
-    left: 10px;
+    bottom: 100px;
+    left: 70px;
 }
 #char-four {
     width: 600px;
@@ -427,8 +427,8 @@ div.char-type {
     width: 700px;
     height: 200px;
     position: fixed;
-    bottom: 190px;
-    right: 100px;
+    bottom: 100px;
+    right: 120px;
 }
 
 div.winner {

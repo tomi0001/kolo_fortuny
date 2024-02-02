@@ -10,8 +10,8 @@
             <file>file:/var/www/html/kolo_fortuny/public/css/app_1810.css</file>
             <file>file:/var/www/html/kolo_fortuny/app/Models/Word.php</file>
             <file>file:/var/www/html/kolo_fortuny/app/Http/Services/Root.php</file>
-            <file>file:/var/www/html/kolo_fortuny/public/css/app_700.css</file>
             <file>file:/var/www/html/kolo_fortuny/resources/views/root/showCategories.blade.php</file>
+            <file>file:/var/www/html/kolo_fortuny/public/css/app_700.css</file>
             <file>file:/var/www/html/kolo_fortuny/resources/views/main/index.blade.php</file>
             <file>file:/var/www/html/kolo_fortuny/resources/views/ajax/updateCategory.blade.php</file>
             <file>file:/var/www/html/kolo_fortuny/resources/views/main/menu.blade.php</file>
@@ -21,7 +21,9 @@
             <file>file:/var/www/html/kolo_fortuny/database/migrations/2020_10_11_000000_create_categories_table.php</file>
             <file>file:/var/www/html/kolo_fortuny/app/Models/Statistic.php</file>
             <file>file:/var/www/html/kolo_fortuny/resources/views/ajax/indexNextGame.blade.php</file>
+            <file>file:/var/www/html/kolo_fortuny/app/Http/Controllers/HomeController.php</file>
             <file>file:/var/www/html/kolo_fortuny/database/migrations/2020_10_12_000000_create_words_table.php</file>
+            <file>file:/var/www/html/kolo_fortuny/app/Http/Controllers/Controller.php</file>
             <file>file:/var/www/html/kolo_fortuny/public/css/app_1210.css</file>
             <file>file:/var/www/html/kolo_fortuny/public/css/app_360.css</file>
             <file>file:/var/www/html/kolo_fortuny/config/app.php</file>
@@ -43,9 +45,11 @@
             <file>file:/var/www/html/kolo_fortuny/database/migrations/2019_08_19_000000_create_failed_jobs_table.php</file>
             <file>file:/var/www/html/kolo_fortuny/resources/views/ajax/updateWord.blade.php</file>
             <file>file:/var/www/html/kolo_fortuny/resources/views/ajax/succes.blade.php</file>
+            <file>file:/var/www/html/kolo_fortuny/resources/views/main/loadDescriptionGame.blade.php</file>
             <file>file:/var/www/html/kolo_fortuny/resources/views/include/include.blade.php</file>
             <file>file:/var/www/html/kolo_fortuny/.env</file>
             <file>file:/var/www/html/kolo_fortuny/public/.htaccess</file>
+            <file>file:/var/www/html/kolo_fortuny/resources/views/main/aboutAutor.blade.php</file>
             <file>file:/var/www/html/kolo_fortuny/resources/views/root/addTitle.blade.php</file>
             <file>file:/var/www/html/kolo_fortuny/config/view.php</file>
             <file>file:/var/www/html/kolo_fortuny/public/js/app.js</file>

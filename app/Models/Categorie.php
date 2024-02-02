@@ -12,6 +12,9 @@ class Categorie extends Model
     public static function selectCategory() {
         return self::select(DB::raw("MAX(id) as id"))->selectRaw("name as category")->selectRaw("punkt as punkt")->groupBy("punkt")->groupBy("name")->inRandomOrder()->get();
     }
+    public static function selectCategoryRandom() {
+        return self::selectRaw("id as id")->inRandomOrder()->first();
+    }
     public static function selectNameCategory(int $id) {
         return self::selectRaw("name as category")->selectRaw("punkt as punkt")->where("id",$id)->first();
     }

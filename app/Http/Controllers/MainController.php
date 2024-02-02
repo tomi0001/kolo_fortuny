@@ -19,8 +19,10 @@ class MainController extends BaseController
         return View("main.index")->with("category",$category);
     }
     public function loadPage2(Request $request) {
-        $Statistic = new Statistic;
-        $Statistic->saveStatistic($request,"Hasło nr 1");
+        if (($request->get("licznik")  == 1) ) {
+            $Statistic = new Statistic;
+            $Statistic->saveStatistic($request,"Hasło nr 1");
+        }
         $Word = new Word;
         $wordl = $Word->selectWordl($request->get("id"));
 

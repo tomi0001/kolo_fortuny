@@ -62,7 +62,7 @@ function loadPage2(id,bool = 'false') {
         url : urlArray[0],
             method : "get",
             data : 
-              "&id=" + id +  "&bool="  + bool + "&allCategories=" + allCategories
+              "&id=" + id +  "&bool="  + bool + "&allCategories=" + allCategories + "&licznik=" + licznikGier
             ,
             dataType : "html",
             
