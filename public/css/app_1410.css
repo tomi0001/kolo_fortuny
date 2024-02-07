@@ -19,11 +19,20 @@
     border-radius: 40px;
     
 }
+.page-at {
+    margin-top: 30px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 800px;
+   
+    border-radius: 40px;
+}
 .page-autor {
     margin-top: 30px;
     padding-top: 300px;
     text-align: center;
-    width: 1700px;
+    width: 1200px;
     height: 800px;
     margin-left: auto;
     margin-right: auto;
@@ -33,8 +42,8 @@
     margin-top: 30px;
     padding-top: 300px;
     text-align: center;
-    width: 1700px;
-    height: 800px;
+    width: 1200px;
+    height: 1600px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 40px;
@@ -262,7 +271,62 @@ div.button-selectCategory-1 {
     height: 70px;
     font-size: 25px;
 }
+button.button-bye {
+    margin-left: 7px;
+    
+    
+}
 
+button.button-one {
+   
+	font-size:17px;
+	font-weight:bold;
+	padding:13px 10px;
+	
+}
+button.button-disable {
+   
+	font-size:17px;
+	font-weight:bold;
+	padding:13px 10px;
+}
+
+div.category-title {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 45px;
+}
+button.button-two {
+	font-size:17px;
+	font-weight:bold;
+	padding:13px 10px;
+}
+
+button.button-four {
+	font-size:17px;
+	font-weight:bold;
+	padding:13px 10px;
+}
+
+button.button-five {
+        font-size:17px;
+	font-weight:bold;
+	padding:13px 10px;
+}
+
+button.button-three {
+	font-size:17px;
+	font-weight:bold;
+	padding:13px 10px;
+}
+
+button.button-word-three {
+	
+	font-size:21px;
+        font-weight: bold;
+	
+}
 
 div.center-title {
     margin-left: auto;
@@ -374,5 +438,19 @@ div.description {
 }
 span.description {
     font-size: 35px;
+}
+div.button-div {
+    width: 79%;
+
+    float: left;
+    padding-top: 30px;
+    
+
+}
+div.punkt {
+    padding-top: 17px;
+    float: left;
+    width: 21%;
+
 }
 }
